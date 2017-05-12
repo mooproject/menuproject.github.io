@@ -7,10 +7,38 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <link rel="stylesheet" href="css.css">
-
 <style>
+
+input[type=text] {
+    width: 50%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    border-radius: 8px 8px 8px 8px
+
+}
+
+input[type=text]:focus {
+    background-color: lightyellow;
+    border: none;
+    border-bottom: 3px solid yellow;
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px
+
+}
 
 
 
@@ -44,6 +72,7 @@
     width: 200px;
     height: 80px;
     border: 3px solid #73AD21;
+    
 }
 
 .div3 {
@@ -89,24 +118,25 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
 .logo {
 	background-image: url(logo.png);
 	background-repeat: no-repeat;
-	padding-top: 120px;
-   	padding-right: 250px;
-    padding-bottom: 170px;
-   	padding-left: 100px;
-   	margin: 0px 0px 0px -35px;
+		padding-top: -20px;
+   	padding-right: 200px;
+    padding-bottom: 250px;
+   	padding-left: 125px;
+   	margin: 0px 0px 0px 50px;
    	border-style: none;
+   		
    		
 }
 
 nav { 
- 	float: left; width: 18%; font-weight: 120%; letter-spacing: 0.1em;
-	text-align: left; background-color: #404040 ; margin: -186px 40px 40px 66px;  
-	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 15px 15px 0px 0px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
+ 	float: left; width: 20% auto; font-weight: 120%; letter-spacing: 0.1em;
+	text-align: left; background-color: #404040 ; margin: -146px 40px 40px 66px;  
+	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 12px 12px 0px 0px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
  	padding-top: 20px;
  	border-bottom: none;
  	border-style: none;
  	float: left;
- width: auto;
+
  height: auto;
   	text-align: center;	
    
@@ -347,7 +377,7 @@ RETIREMENT VAULT
 <nav>
 
 <ul>
-<b><a href="index.html">INDUCTION</a></b> 
+<b><a href="Index.html">INDUCTION</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
 <b> <a href="colisium.html">COLISIUM</a></b>
 <b> <a href="crusade.html">CRUSADES</a></b>
@@ -362,11 +392,17 @@ RETIREMENT VAULT
   
 <h2>WELCOME TO THE COLISIUM</h2><br>
 <div>
-<iframe width="760" height="400" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="0" allowfullscreen></iframe>
 </div>
-<h2>About Colisium</h2>
+<h2>COMPLETE YOUR INDUCTION BELOW</h2>
     
-<p>Paragraph goes here. Anything can be place under the h2 tag.</p>
+<p>Paragraph goes here. Anything can be place under the h2 tag.</p><br><br><br><br>
+<form>
+  <input type="text" name="fname" placeholder="First Name" style="margin:0px auto; display:block;"><br>
+  <input type="text" name="lname" placeholder="Last Name" style="margin:0px auto; display:block;"><br>
+  <input type="text" name="cname" placeholder="Company Name" style="margin:0px auto; display:block;"><br>
+  <input type="submit" value="Submit" style="margin:0px auto; display:block;"><br><br><br>
+</form>
     
 
 </div> 
