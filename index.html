@@ -11,6 +11,27 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+	
+#myProgress {
+  width: 100%;
+  background-color: #aaa;
+}
+
+#myBar {
+  width: 0%;
+  height: 20px;
+  background-color: #993300;
+  */
+    background: -webkit-linear-gradient(darkred, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(darkred, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(darkred, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(darkred, black); /* Standard syntax (must be last) */
+}
+  text-align: right;
+  line-height: 20px;
+  color: #aaa;
+}
+	
 .form-style-9{
     max-width: 100%;
     background: rgb(60, 53, 17);
@@ -412,7 +433,13 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div class="div1">
 <img src="averageJoe.png" alt="" width="300" height="200">
 </div>
-
+	
+<div class="div4">
+ <div id="myProgress">
+  <div id="myBar">0%</div>
+</div>
+</div>	
+	
 <h1>WELCOME</h1>
 <div class="div3">
 Savings Line By Catetory
@@ -470,12 +497,24 @@ Savings Line By Catetory
 </form>
  </div>
 
-<footer>Copyright &copy; Maximize 2017
-
-</footer>
-
+<footer>Copyright &copy; Maximize 2017</footer>
 </div>
-
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 10) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
 </body>
 
 </html>
