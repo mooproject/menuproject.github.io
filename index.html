@@ -166,7 +166,23 @@ fieldset {
  color:#888;
 }
 
+input[type=submit] {
+   
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+input[type=submit]:hover {
+    
+     color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 	
 	
@@ -541,30 +557,30 @@ Savings Line By Catetory
 	
 <div id="content"> 	
 <div class="container"> 	
- <form id="contact"  action="https://mooproject.github.io/menuproject.github.io/futureprofile.html">
+ <form id="contact"  action="https://mooproject.github.io/menuproject.github.io/futureprofile.html" name="theform">
    <h3>INDUCTION</h3>
    <h4>COMPLETE YOUR INDUCTION</h4>
     <fieldset>
-      <input placeholder="First name" type="text" tabindex="1"  required autofocus>
+      <input placeholder="First name" type="text" tabindex="1"  onKeyup="checkform()" required autofocus>
     </fieldset>
 	  <fieldset>
-      <input placeholder="Last name" type="text" tabindex="1"   required autofocus>
+      <input placeholder="Last name" type="text" tabindex="1"  onKeyup="checkform()" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email"  tabindex="2" required>
+      <input placeholder="Your Email Address" type="email" onKeyup="checkform()" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number" type="tel"  tabindex="3" required>
+      <input placeholder="Your Phone Number" type="tel" onKeyup="checkform()" tabindex="3" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4"  required>
-    </fieldset>
-    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="url" onKeyup="checkform()" tabindex="4"  required>
+	 </fieldset>	    
      <fieldset>
-      <input placeholder="Company name" type="text" tabindex="6" required autofocus>
-    </fieldset>
+      <input placeholder="Company name" type="text" tabindex="6" onKeyup="checkform()" required autofocus>
     </fieldset>
     <fieldset>
+	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
+this.style.backgroundColor = '#7ca503'"><br><br>
     </fieldset>
 
  <button value="Submit" onclick="move()" ><font color="white">Submit</font></button><br><br> 
@@ -596,6 +612,24 @@ function move() {
   }
 }
 	
+function checkform()
+    {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+
+        if (cansubmit) {
+          document.getElementById('submitbutton').style.backgroundColor = "#99cc00";
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else {
+        document.getElementById('submitbutton').disabled = 'disabled';
+    }
+      
+    }
 	
 </script>
 </body>
