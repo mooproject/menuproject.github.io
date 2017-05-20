@@ -577,34 +577,34 @@ Savings Line By Catetory
 	
 <div id="content"> 	
 <div class="container"> 	
- <form id="contact"  action="https://mooproject.github.io/menuproject.github.io/futureprofile.html">
+ <form id="contact"  action="https://mooproject.github.io/menuproject.github.io/futureprofile.html" name="theform">
    <h3>INDUCTION</h3>
    <h4>COMPLETE YOUR INDUCTION</h4>
     <fieldset>
-      <input placeholder="First name" type="text" tabindex="1" required autofocus>
+      <input placeholder="First name" type="text" tabindex="1" onKeyup="checkform()" required autofocus>
     </fieldset>
 	  <fieldset>
-      <input placeholder="Last name" type="text" tabindex="1" required autofocus>
+      <input placeholder="Last name" type="text" tabindex="1" onKeyup="checkform()"  required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      <input placeholder="Your Email Address" type="email" onKeyup="checkform()" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+      <input placeholder="Your Phone Number" type="tel" onKeyup="checkform()" tabindex="3" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" onKeyup="checkform()" required>
     </fieldset>
     <fieldset>
      <fieldset>
-      <input placeholder="Company name" type="text" tabindex="6" required autofocus>
+      <input placeholder="Company name" type="text" tabindex="6" onKeyup="checkform()" required autofocus>
     </fieldset>
     </fieldset>
     <fieldset>
 
     </fieldset>
 
- <button id="myBtn" onclick="move()" disabled="disabled"><font color="white">Submit</font></button><br><br> 
+ <button id="submitbutton" disabled="disabled" value="Submit" onclick="move()" ><font color="white">Submit</font></button><br><br> 
 	
 	</form>
  <!-- The Modal -->
@@ -666,25 +666,25 @@ window.onclick = function(event) {
     }
 }
 
+function checkform()
+    {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
 
-
-(function() {
-    $('form > input').keyup(function() {
-
-        var empty = false;
-        $('form > input').each(function() {
-            if ($(this).val() == '') {
-                empty = true;
-            }
-        });
-
-        if (empty) {
-            $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-        } else {
-            $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
         }
-    });
-})()
+
+        if (cansubmit) {
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else {
+        document.getElementById('submitbutton').disabled = 'disabled';
+    }
+      
+    }
+
+
 	
 	
 </script>
