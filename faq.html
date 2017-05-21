@@ -129,6 +129,123 @@
 }
 
 
+#mymenu ul {
+  margin: 0;
+  padding: 0;
+  color: #604406;
+}
+
+#mymenu .mymain-menu {
+  display: none;
+  background-color: #f9dd9f;
+  color: #000;
+  
+}
+
+#tk:checked + .mymain-menu {
+  display: block;
+    color: #604406;
+  
+}
+
+#mymenu input[type="checkbox"], 
+#mymenu ul span.drop-icon {
+  display: none;
+
+}
+
+#mymenu li, 
+#mytoggle-menu, 
+#mymenu .sub-menu {
+  border-style: solid;
+ border-color: rgba(0, 0, 0, 0.1);
+
+}
+
+#mymenu li, 
+#mytoggle-menu {
+  border-width: 0 0 1px;
+  background-color: transparent;
+  
+}
+
+#mymenu .sub-menu {
+ background-color: #444;
+  border-width: 1px 1px 0;
+  margin: 0 1em;
+
+}
+
+#mymenu .sub-menu li:last-child {
+  border-width: 0;
+  color: #000;
+}
+
+#mymenu li, 
+#mytoggle-menu, 
+#mymenu a {
+  position: relative;
+  display: block;
+  color: #000;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+}
+
+#mymenu, 
+#mytoggle-menu {
+  background-color: #E5A200;
+
+}
+
+#mytoggle-menu, 
+#mymenu a {
+  padding: 1em 1.5em;
+}
+
+#mymenu a {
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out;
+}
+
+#mymenu a:hover {
+  background-color: white;
+  color: #604406;
+}
+
+#mymenu .sub-menu {
+  display: none;
+}
+
+#mymenu input[type="checkbox"]:checked + .sub-menu {
+  display: block;
+}
+
+#mymenu .sub-menu a:hover {
+
+}
+
+#mytoggle-menu .drop-icon, 
+#mymenu li label.drop-icon {
+  position: absolute;
+  right: 1.5em;
+  top: 1.25em;
+
+}
+
+#mymenu label.drop-icon, #mytoggle-menu span.drop-icon {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .125);
+  text-shadow: 0 0 0 transparent;
+  color: rgba(255, 255, 255, .75);
+}
+
+#mymenu .drop-icon {
+  line-height: 1;
+
+}
+
 
 
 .wrap {
