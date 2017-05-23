@@ -11,7 +11,37 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
-	
+/*add button*/
+input[type=submit2] {
+  background:url(https://cdn.pbrd.co/images/oAymv0R.png);
+   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  
+  border: none;
+   
+
+    background-color:  #009900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   margin: 1px;
+    padding: 5px 10px ;
+   width: 40px;
+    height: 20px;
+    
+   
+}
+/*hover for add button*/
+input[type=submit2]:hover {
+    background-color: #00e600;
+    border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
 	
 	
 #myProgress {
@@ -428,7 +458,8 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 
 <div id="content"> 
-  
+ <input class="button" id="submit"  name="submit" type="submit2" value=" "  onclick="addShoppinglist(item.value)" /><br><br>
+
 
 </div>
 <footer>Copyright &copy; Maximize 2017
