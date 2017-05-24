@@ -6,43 +6,35 @@
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 <link rel="stylesheet" href="css.css">
 
 <style>
-button {
-  background-position: 80% 80%;
-  /* put the height and width of your image here */
-  height: 40px;
-  width: 150px;
-  border: none;
-   background-color: #006600;
+
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
 }
-
-button span {
-  display: none;
-  appearance: none;
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
-
-
-
-button:hover {
-  background: #4CAF50;
-  background-image: -webkit-linear-gradient(top, #4CAF50, #006600);
-  background-image: -moz-linear-gradient(top, #4CAF50, #006600);
-  background-image: -ms-linear-gradient(top, #4CAF50, #006600);
-  background-image: -o-linear-gradient(top, #4CAF50, #006600);
-  background-image: linear-gradient(to bottom, #4CAF50, #006600);
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid;
-  box-shadow: inset 0 0 0px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-  outline-color: rgba(255, 255, 255, 0);
-  text-shadow: 1px 1px 1px #427388; 
-    font-size: 100%
-    
+a:hover {
+    color: #e6ac00;
+    background-color: transparent;
+    text-decoration: underline;
 }
+a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}	
+
+
+	
+	
 	
 #myProgress {
   width: 100%;
@@ -50,7 +42,7 @@ button:hover {
 }
 
 #myBar {
-  width: 10%;
+  width: 0%;
   height: 20px;
   background-color: #993300;
   */
@@ -63,8 +55,8 @@ button:hover {
   line-height: 20px;
   color: #aaa;
 }
-
-
+	
+	
 
 .wrap {
   width:800px;
@@ -81,6 +73,19 @@ img {
     
 }
 
+
+
+.div6 img {
+	 
+	position: relative;
+    top: -210px;
+    right: -20px;
+    width: 900px;
+    height: 550px;
+    border: 5px solide red;
+
+}
+
 .div1 {
    width: 100%;
     height: 70px;  
@@ -90,9 +95,11 @@ img {
     padding-top: 50px;
 	margin: -20px 0px;
    box-shadow: 0px 10px 18px 0px  black;
+  
    
     
 }
+
 
 .div2 {
      position: absolute;
@@ -112,15 +119,14 @@ img {
     color: #fff;
     
 }
-	
+
 .div4 {
      position: absolute;
     top: 75px;
     right: 70px;
     width: 136px;
     height: 80px;
-    color: #fff;
-    
+    color: #fff;    
 }
 
 .div5 {
@@ -130,6 +136,7 @@ img {
     color: #fff;
     
 }
+	
 
 body {font-family: Verdana, Arial, sans-serif;
 background-color: #262626;
@@ -150,8 +157,11 @@ h1 { color: #e2c810; visibility: hidden}
  h2 { color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
  	width: 710px;
     
-    padding: 15px 5px ;
-    margin: 5px}
+    padding: 20px 8px ;
+    margin: 20px}
+	
+	h3 {color: #e9dfaf;}
+	h4 {color: #efe7c3;}
 
 header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
  color: #003300;
@@ -161,7 +171,7 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
 }
 
 .logo {
-	background-image: url(logo.png);
+	background-image: url(colisium.png);
 	background-repeat: no-repeat;
 		padding-top: -20px;
    	padding-right: 200px;
@@ -216,6 +226,7 @@ footer { text-align: center;
 clear: both; background-color: #ffffff; 
 }
 
+
 /* for desktop */
 @media only screen and  (max-width: 1012px)
 {
@@ -229,7 +240,7 @@ clear: both; background-color: #ffffff;
 }
 
 iframe, object, embed {
-    max-width: 150%;
+    max-width: 160%;
 }
 
 h2 {
@@ -410,12 +421,13 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	
 <div class="div4">
  <div id="myProgress">
-  <div id="myBar"></div>
+  <div id="myBar">0%</div>
 </div>
-</div>
+</div>	
 <div class="div5">
 <a href=""> Logout</a>
-</div>	
+</div>
+	
 <h1>WELCOME</h1>
 <div class="div3">
 <img src="savingline.png" alt="" width="2200" height="900">
@@ -429,7 +441,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <nav>
 
 <ul>
-<b><a href="index.html">INDUCTION</a></b> 
+<b><a href="index.html">INDUCTIONS</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
 <b> <a href="colisium.html">COLISIUM</a></b>
 <b> <a href="crusade.html">CRUSADES</a></b>
@@ -438,32 +450,26 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
-
-
-<div id="content">
 	
-<h2>WELCOME TO THE COLISIUM</h2><br>
 
-<p>Paragraph goes here. Anything can be place under the h2 tag.</p>
-    
-<button><a href="https://mooproject.github.io/menuproject.github.io/index.html" onclick="move()">Submit</a></button><br><br> 
+	
+<div id="content">
 
-</div> 
-
-<footer>Copyright &copy; Maximize 2017
-
-</footer>
 
 </div>
 
-	
+  
+
+
+<footer>Copyright &copy; Maximize 2017</footer>
+</div>
 <script>
 function move() {
   var elem = document.getElementById("myBar");   
   var width = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (width >= 20) {
+    if (width >= 10) {
       clearInterval(id);
     } else {
       width++; 
@@ -472,6 +478,26 @@ function move() {
     }
   }
 }
+	
+function checkform()
+    {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+
+        if (cansubmit) {
+          document.getElementById('submitbutton').style.backgroundColor = "#99cc00";
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else {
+        document.getElementById('submitbutton').disabled = 'disabled';
+    }
+      
+    }
+	
 </script>
 </body>
 
