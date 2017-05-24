@@ -6,63 +6,52 @@
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 <link rel="stylesheet" href="css.css">
 
 <style>
+
+
 #menu ul {
   margin: 0;
   padding: 0;
   color: #604406;
 }
-
 #menu .main-menu {
   display: none;
   background-color: #f9dd9f;
   color: #000;
   
 }
-
 #tm:checked + .main-menu {
   display: block;
     color: #604406;
   
 }
-
 #menu input[type="checkbox"], 
 #menu ul span.drop-icon {
   display: none;
-
 }
-
 #menu li, 
 #toggle-menu, 
 #menu .sub-menu {
   border-style: solid;
  border-color: rgba(0, 0, 0, 0.1);
-
 }
-
 #menu li, 
 #toggle-menu {
   border-width: 0 0 1px;
   background-color: transparent;
   
 }
-
 #menu .sub-menu {
  background-color: #444;
   border-width: 1px 1px 0;
   margin: 0 1em;
-
 }
-
 #menu .sub-menu li:last-child {
   border-width: 0;
   color: #000;
 }
-
 #menu li, 
 #toggle-menu, 
 #menu a {
@@ -71,48 +60,36 @@
   color: #000;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
 }
-
 #menu, 
 #toggle-menu {
   background-color: #E5A200;
-
 }
-
 #toggle-menu, 
 #menu a {
   padding: 1em 1.5em;
 }
-
 #menu a {
   transition: all .125s ease-in-out;
   -webkit-transition: all .125s ease-in-out;
 }
-
 #menu a:hover {
   background-color: white;
   color: #604406;
 }
-
 #menu .sub-menu {
   display: none;
 }
-
 #menu input[type="checkbox"]:checked + .sub-menu {
   display: block;
 }
-
 #menu .sub-menu a:hover {
-
 }
-
 #toggle-menu .drop-icon, 
 #menu li label.drop-icon {
   position: absolute;
   right: 1.5em;
   top: 1.25em;
-
 }
-
 #menu label.drop-icon, #toggle-menu span.drop-icon {
   border-radius: 50%;
   width: 1em;
@@ -122,65 +99,50 @@
   text-shadow: 0 0 0 transparent;
   color: rgba(255, 255, 255, .75);
 }
-
 #menu .drop-icon {
   line-height: 1;
-
 }
-
-
 #mymenu ul {
   margin: 0;
   padding: 0;
   color: #604406;
 }
-
 #mymenu .mymain-menu {
   display: none;
   background-color: #f9dd9f;
   color: #000;
   
 }
-
 #tk:checked + .mymain-menu {
   display: block;
     color: #604406;
   
 }
-
 #mymenu input[type="checkbox"], 
 #mymenu ul span.drop-icon {
   display: none;
-
 }
-
 #mymenu li, 
 #mytoggle-menu, 
 #mymenu .sub-menu {
   border-style: solid;
  border-color: rgba(0, 0, 0, 0.1);
-
 }
-
 #mymenu li, 
 #mytoggle-menu {
   border-width: 0 0 1px;
   background-color: transparent;
   
 }
-
 #mymenu .sub-menu {
  background-color: #444;
   border-width: 1px 1px 0;
   margin: 0 1em;
-
 }
-
 #mymenu .sub-menu li:last-child {
   border-width: 0;
   color: #000;
 }
-
 #mymenu li, 
 #mytoggle-menu, 
 #mymenu a {
@@ -189,48 +151,36 @@
   color: #000;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
 }
-
 #mymenu, 
 #mytoggle-menu {
   background-color: #E5A200;
-
 }
-
 #mytoggle-menu, 
 #mymenu a {
   padding: 1em 1.5em;
 }
-
 #mymenu a {
   transition: all .125s ease-in-out;
   -webkit-transition: all .125s ease-in-out;
 }
-
 #mymenu a:hover {
   background-color: white;
   color: #604406;
 }
-
 #mymenu .sub-menu {
   display: none;
 }
-
 #mymenu input[type="checkbox"]:checked + .sub-menu {
   display: block;
 }
-
 #mymenu .sub-menu a:hover {
-
 }
-
 #mytoggle-menu .drop-icon, 
 #mymenu li label.drop-icon {
   position: absolute;
   right: 1.5em;
   top: 1.25em;
-
 }
-
 #mymenu label.drop-icon, #mytoggle-menu span.drop-icon {
   border-radius: 50%;
   width: 1em;
@@ -240,13 +190,108 @@
   text-shadow: 0 0 0 transparent;
   color: rgba(255, 255, 255, .75);
 }
-
 #mymenu .drop-icon {
   line-height: 1;
+}
+
+	
+	
+	
+	
+	
+	
+	
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #cc9900;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  
+}
+
+.button:hover span {
+  padding-right: 25px;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 
 }
 
 
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #e6ac00;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}	
+
+
+	
+	
+	
+#myProgress {
+  width: 100%;
+  background-color: #aaa;
+}
+
+#myBar {
+  width: 0%;
+  height: 20px;
+  background-color: #993300;
+  */
+    background: -webkit-linear-gradient(darkred, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(darkred, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(darkred, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(darkred, black); /* Standard syntax (must be last) */
+}
+  text-align: right;
+  line-height: 20px;
+  color: #aaa;
+}
+	
+	
 
 .wrap {
   width:800px;
@@ -263,6 +308,9 @@ img {
     
 }
 
+
+
+
 .div1 {
    width: 100%;
     height: 70px;  
@@ -272,9 +320,11 @@ img {
     padding-top: 50px;
 	margin: -20px 0px;
    box-shadow: 0px 10px 18px 0px  black;
+  
    
     
 }
+
 
 .div2 {
      position: absolute;
@@ -294,6 +344,16 @@ img {
     color: #fff;
     
 }
+
+.div4 {
+     position: absolute;
+    top: 75px;
+    right: 70px;
+    width: 136px;
+    height: 80px;
+    color: #fff;    
+}
+
 .div5 {
      position: absolute;
     top: 50px;
@@ -301,6 +361,7 @@ img {
     color: #fff;
     
 }
+	
 
 body {font-family: Verdana, Arial, sans-serif;
 background-color: #262626;
@@ -318,11 +379,14 @@ wrapper {  background-color: #F4E8BC;
 h1 { color: #e2c810; visibility: hidden}
 
 
- h2 { color: #e2c810; text-align: center;  font-weight: bold; 
+ h2 { color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
  	width: 710px;
     
     padding: 20px 8px ;
     margin: 20px}
+	
+	h3 {color: #e9dfaf;}
+	h4 {color: #efe7c3;}
 
 header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
  color: #003300;
@@ -332,7 +396,7 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
 }
 
 .logo {
-	background-image: url(logo.png);
+	background-image: url(colisium.png);
 	background-repeat: no-repeat;
 		padding-top: -20px;
    	padding-right: 200px;
@@ -387,6 +451,7 @@ footer { text-align: center;
 clear: both; background-color: #ffffff; 
 }
 
+
 /* for desktop */
 @media only screen and  (max-width: 1012px)
 {
@@ -400,7 +465,7 @@ clear: both; background-color: #ffffff;
 }
 
 iframe, object, embed {
-    max-width: 150%;
+    max-width: 160%;
 }
 
 h2 {
@@ -573,15 +638,21 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <a class="logo" href="" ></a>
 
 <header>
-<div class="div5">
-<a href=""> Logout</a>
-</div>
 
 
 <div class="div1">
 <img src="averageJoe.png" alt="" width="300" height="200">
 </div>
-
+	
+<div class="div4">
+ <div id="myProgress">
+  <div id="myBar">0%</div>
+</div>
+</div>	
+<div class="div5">
+<a href=""> Logout</a>
+</div>
+	
 <h1>WELCOME</h1>
 <div class="div3">
 <img src="savingline.png" alt="" width="2200" height="900">
@@ -595,7 +666,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <nav>
 
 <ul>
-<b><a href="index.html">INDUCTION</a></b> 
+<b><a href="index.html">INDUCTIONS</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
 <b> <a href="colisium.html">COLISIUM</a></b>
 <b> <a href="crusade.html">CRUSADES</a></b>
@@ -604,12 +675,19 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
+	
+
+	<form action="#">
+<button class="button" style="vertical-align:middle"><span>Start here </span></button>
+</form>
+
+<br><br><br>
+
+<div id="content">
 
 
-<div id="content"> 
-  
+<div class="container"> 
 <h2>FAQ</h2><br>
-
     
 <div id="menu">
   <label for="tm" id="toggle-menu">What is the benefit of joing the Colisium? <span class="drop-icon">▾</span></label>
@@ -618,23 +696,60 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
     <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is just an example. You would save money plus learn a new skill and be successful in life. sample..sample</a></li>
   </ul>
 </div><br>
-
  <div id="mymenu">
   <label for="tk" id="mytoggle-menu">What am I going to learn if i join the colisium? <span class="drop-icon">▾</span></label>
   <input type="checkbox" id="tk">
   <ul class="mymain-menu clearfix">
     <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sameple Sample..There are courses such as business, speech, budgeting, investing and more. You will learn.... </a></li>
   </ul>
-</div><br>   
-
-</div> 
-
-<footer>Copyright &copy; Maximize 2017
-
-</footer>
-
+</div><br> 
+	 
+</div>
+	
 </div>
 
+
+  
+
+
+<footer>Copyright &copy; Maximize 2017</footer>
+</div>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 10) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+	
+function checkform()
+    {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+
+        if (cansubmit) {
+          document.getElementById('submitbutton').style.backgroundColor = "#99cc00";
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else {
+        document.getElementById('submitbutton').disabled = 'disabled';
+    }
+      
+    }
+	
+</script>
 </body>
 
 </html>
