@@ -9,7 +9,86 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+/* for pop up image */
+img {
+  width: 100%;
+  height: 100%;
+}
 
+#hide-me ~ label {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,.5);
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.2) 0%, rgba(0,0,0,.9) 150%);
+} 
+#hide-me ~ label > .message {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  background: #F7F9F3;
+  padding: 2.5em;
+  box-shadow: 0 5px 30px 5px #222;
+}
+#hide-me ~ label .close {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #eee;
+  background: #C00;
+  padding: 3px;
+  border-radius: 2em;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  cursor: pointer;
+
+  font-family: "Consolas", arial, Serif;
+}
+#hide-me {
+  display: none;
+}
+#hide-me[type=checkbox] ~ .content {
+  -webkit-filter: blur(5px);
+}
+#hide-me[type=checkbox]:checked ~ label {
+  display: none;
+}
+#hide-me[type=checkbox]:checked ~ .content {
+  -webkit-filter: none;
+}
+
+/** begin: debugging tool 
+    This positions the checkbox that powers this effect in the upper right-hand corner. To redisplay the popup box, uncheck the box.
+**/
+#hide-me {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+}
+/** end: bebugging tool **/
+
+/** begin: content styles **/
+article {
+  width: 960px;
+  margin: 1em auto;
+}
+h1{
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 2.5em;
+}
+#lipsum {
+  column-count: 2;
+}
+/** end: pop up image **/
+	
+	
 
 a:link {
     color: green;
@@ -454,7 +533,14 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 	
 <div id="content">
-
+	
+<input type="checkbox" id="hide-me">
+<label for="hide-me">
+  <div class="message"><span class="close">x</span>
+    <strong>Attention:</strong><br>
+    <img src="https://cdn.pbrd.co/images/adfFcRQFf.png" />
+  </div>
+</label>
 
 </div>
 
