@@ -32,29 +32,16 @@ border: 4px solid red;
 }
 
 
-#uploadPreview{
-  height:100px;
-  width:100px;
-   border-radius: 0px;
-   
-}
-
-#uploadImage{
-  width:500px;
-  float:left;
-}
-
-
-
 .file-upload-input {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   outline: none;
   opacity: 0;
   cursor: pointer;
+
 }
 	
 /* for pop up image */
@@ -593,8 +580,8 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 	
 <div class="div9">
-<input id="uploadImage" type="file" class="file-upload-input"  name="myPhoto" onchange="PreviewImage();" accept="image/*"  />
-<img src="https://cdn.pbrd.co/images/ao5zvZb44.png" id="uploadPreview" style="width: 100px; height: 100px;" />
+<input type="file" onchange="previewFile()" class="file-upload-input"><br>
+<img src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 100px; width: 100px;" alt="Image preview...">
 </div>
 	
 <div class="div7">
@@ -651,6 +638,30 @@ function checkform()
     }
       
     }
+	
+	
+	
+function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+ reader.onloadend = function () {
+   console.log(preview.width.toFixed(0))
+   console.log(preview.height.toFixed(0))
+   if (preview.width.toFixed(0) > 400 || preview.height.toFixed(0) > 400) { 
+     alert('enter a 400x400px or less image');
+     return false;
+   } else {
+      preview.src = reader.result;
+   }
+ }
+ if (file) {
+   reader.readAsDataURL(file);
+ } else {
+   preview.src = "";
+ }  
+}
 	
 </script>
 </body>
