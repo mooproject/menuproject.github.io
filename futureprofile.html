@@ -583,9 +583,10 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div class="div8">	
 </div>
 <div class="div9">
-<input type="file" onchange="previewFile()" class="file-upload-input"><br>
-<img src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 100px; width: 100px;" alt="Image preview...">
-</div>
+
+<input type="file" onchange="loadFile(event)" class="file-upload-input"><br>
+<img id="output" src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 100px; width: 100px;" alt="Image preview...">
+</div></div>
 	
 <div class="div7">
 <img src="https://cdn.pbrd.co/images/adfFcRQFf.png" alt="" width="200" height="300" />
@@ -643,28 +644,11 @@ function checkform()
     }
 	
 	
+var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
 	
-function previewFile() {
-  var preview = document.querySelector('img');
-  var file    = document.querySelector('input[type=file]').files[0];
-  var reader  = new FileReader();
-
- reader.onloadend = function () {
-   console.log(preview.width.toFixed(0))
-   console.log(preview.height.toFixed(0))
-   if (preview.width.toFixed(0) > 400 || preview.height.toFixed(0) > 400) { 
-     alert('enter a 400x400px or less image');
-     return false;
-   } else {
-      preview.src = reader.result;
-   }
- }
- if (file) {
-   reader.readAsDataURL(file);
- } else {
-   preview.src = "https://cdn.pbrd.co/images/ao5zvZb44.png";
- }  
-}	
 </script>
 </body>
 
