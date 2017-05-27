@@ -580,7 +580,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	
 <div class="div9">
 <input type="file" onchange="previewFile()" class="file-upload-input"><br>
-<img src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 50px; width: 50px;" alt="Image preview...">
+<img src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 100px; width: 100px;" alt="Image preview...">
 </div>
 	
 <div class="div7">
@@ -648,8 +648,8 @@ function previewFile() {
  reader.onloadend = function () {
    console.log(preview.width.toFixed(0))
    console.log(preview.height.toFixed(0))
-   if (preview.width.toFixed(0) > 400 || preview.height.toFixed(0) > 400) { 
-     alert('enter a 400x400px or less image');
+   if (preview.width.toFixed(0) > 100 || preview.height.toFixed(0) > 100) { 
+     alert('enter a 100px x 100px or less image');
      return false;
    } else {
       preview.src = reader.result;
