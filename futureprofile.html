@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
-.div9 {
+iv9 {
 	 position: absolute;
     top: 415px;
     right: 460px;
@@ -19,7 +19,7 @@ border: 4px solid red;
 
 }
 
-.div8 {
+iv8 {
    
 	border: 2px solid red;
 	   position: absolute;
@@ -32,6 +32,25 @@ border: 4px solid red;
 }
 
 
+
+.div9 {
+	 position: absolute;
+    top: 80px;
+    right: 90px;
+    height:102px;
+  width:102px;
+border: 4px solid red;
+}
+.div8 {
+   
+	border: 2px solid red;
+	   position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 450px;
+    height: 250px;
+	background-color: #ccc;
+}
 .file-upload-input {
   position: absolute;
  
@@ -40,8 +59,9 @@ border: 4px solid red;
   outline: none;
   opacity: 0;
   cursor: pointer;
-
 }
+	
+	
 	
 /* for pop up image */
 div.popimg img{
@@ -575,9 +595,9 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	
 <div id="content">
 	
+    
 <div class="div8">	
 </div>
-	
 <div class="div9">
 <input type="file" onchange="previewFile()" class="file-upload-input"><br>
 <img src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 100px; width: 100px;" alt="Image preview...">
@@ -649,7 +669,7 @@ function previewFile() {
    console.log(preview.width.toFixed(0))
    console.log(preview.height.toFixed(0))
    if (preview.width.toFixed(0) > 100 || preview.height.toFixed(0) > 100) { 
-     alert('enter a 100px x 100px or less image');
+     alert('enter a 400x400px or less image');
      return false;
    } else {
       preview.src = reader.result;
@@ -660,8 +680,7 @@ function previewFile() {
  } else {
    preview.src = "https://cdn.pbrd.co/images/ao5zvZb44.png";
  }  
-}
-	
+}	
 </script>
 </body>
 
