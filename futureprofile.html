@@ -668,7 +668,7 @@ function previewFile() {
  reader.onloadend = function () {
    console.log(preview.width.toFixed(0))
    console.log(preview.height.toFixed(0))
-   if (preview.width.toFixed(0) > 100 || preview.height.toFixed(0) > 100) { 
+   if (preview.width.toFixed(0) > 500 || preview.height.toFixed(0) > 500) { 
      alert('enter a 400x400px or less image');
      return false;
    } else {
