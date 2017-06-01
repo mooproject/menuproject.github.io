@@ -3,9 +3,20 @@
 <head>
 <title>Maximize Excelence</title>
 
-<meta charset="utf-8">
-
+<meta charset="utf-8">	
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+<a id="popuplink" href="#inline" style="display:none;"></a>
+<div id="inline" style="display:none;text-align:center;">
+<img src="https://cdn.pbrd.co/images/adfFcRQFf.png" alt="" width="200" height="300" />
+<p><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#333;padding:5px 10px;color:#fff;border-radius:5px;text-decoration:none;">Close</a></p>
+  </div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
+	
+	
 <link rel="stylesheet" href="css.css">
 
 <style>
@@ -591,6 +602,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	
 <div class="div7">
 <img src="https://cdn.pbrd.co/images/adfFcRQFf.png" alt="" width="200" height="300" />
+	
 </div>	
 		
 <input type="checkbox" id="hide-me" style="display:none">
@@ -700,6 +712,33 @@ function delete_cookie(name) {
   document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+
+	
+	
+	
+	
+	
+jQuery(document).ready(function () {
+    function openFancybox() {
+        setTimeout(function () {
+            jQuery('#popuplink').trigger('click');
+        }, 500);
+    };
+    var visited = jQuery.cookie('visited');
+    if (visited == 'yes') {
+         // second page load, cookie active
+    } else {
+        openFancybox(); // first page load, launch fancybox
+    }
+    jQuery.cookie('visited', 'yes', {
+        expires: 365 // the number of days cookie  will be effective
+    });
+    jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
+});	
+	
+	
+	
+	
 </script>
 </body>
 
