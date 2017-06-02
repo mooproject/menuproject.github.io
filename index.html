@@ -10,17 +10,21 @@
 
 <style>
 .btn-group .button {
-    background-color: #cc9900; 
-    border: 1px solid white;
-    border-top-style: 5px solid; border-bottom: none; 
+    background-color: transparent; 
+    border: none;
+    border-top: 2px solid black;
     color: white;
-    padding: 9px 9px;
+    padding: 8px 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
     cursor: pointer;
     float: left;
+    font-weight: bold;
+     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
 }
 .btn-group .button:not(:last-child) {
     border-right: none; /* Prevent double borders */
@@ -391,21 +395,29 @@ img {
 
 .div5Link {
      position: absolute;
+      text-decoration: none;
     top: 50px;
     right: 340px;
     color: #ffffff;
     text-align: right;
-    text-decoration: none;
+   
+}
+.div .div5Link:hover {
+	color: #e6ac00;
 }
 
 .div7 {
      position: absolute;
     top: 308px;
-    right: 160px;
+    right: 180px;
     width: 800px;
     height: 400px;
     color: #fff;
     
+}
+
+.div7:hover { 
+	color: #e6ac00;
 }
 
 body {font-family: Verdana, Arial, sans-serif;
