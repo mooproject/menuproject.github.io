@@ -395,15 +395,29 @@ img {
 
 .div5Link {
      position: absolute;
-      text-decoration: none;
     top: 50px;
     right: 340px;
-    color: #ffffff;
-    text-align: right;
-   
+    text-align: right; 
 }
-.div .div5Link:hover {
-	color: #e6ac00;
+
+.div5Link  a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+.div5Link a:visited {
+    color: green;
+}
+
+/* mouse over link */
+.div div5Link a:hover {
+    color: #e6ac00;
+}
+
+/* selected link */
+.div5Link a:active {
+    color: blue;
 }
 
 .div7 {
@@ -708,8 +722,8 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 </div>	
 <div class="div5Link">
-<a href=""> <font color="white">Logout</font></a><br>
-<a href="#"> <font color="white">maximumexcellence.com</font></a>
+<a href=""> Logout</a><br><br>
+<a href="#"> maximumexcellence.com</a>
 </div>
 	
 <h1>WELCOME</h1>
