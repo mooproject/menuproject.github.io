@@ -9,7 +9,254 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
-		
+#container {
+    width:90%;
+    margin:20px auto;
+
+    padding:20px;
+  
+    
+
+}
+
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+ position: relative;
+    width: 30%;
+    display:inline-block;
+	border: 1px solid #ccc;
+	margin: 20px;
+}
+
+	.flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 227px;
+}
+
+.flipper {
+	-webkit-transition: 3s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 3s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 3s;
+	-o-transform-style: preserve-3d;
+
+	transition: 3s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
+	z-index: 2;
+	
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	background: #f8f8f8;
+}
+
+.front .name {
+	font-size: 1em;
+	display: inline-block;
+	background: rgba(33, 33, 33, .8);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 15px 10px;
+	border-radius: 1px;
+	bottom: 0px;
+	left: 0%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+width: 90%;
+	text-align: center;
+}
+
+.back-logo {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 160px;
+	height: 117px;
+	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
+}
+
+.back-title {
+	font-weight: bold;
+	color: #00304a;
+	position: absolute;
+	top: 140px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-family: calbri;
+	font-size: 1em;
+}
+
+.back p {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0 1px;
+  font-family: arial;
+  line-height: 1em;
+}
+
+
+/*second course*/
+.secondflip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+    width: 30%;
+    margin: 20px;
+display: inline-block;
+	border: 1px solid #ccc;
+}
+
+	.secondflip-container:hover .secondflipper,  
+  .secondflip-container.hover .secondflipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.secondflip-container, .secondfront, .secondback {
+	width: 200px;
+	height: 227px;
+}
+
+.secondflipper {
+	-webkit-transition: 3s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 3s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 3s;
+	-o-transform-style: preserve-3d;
+
+	transition: 3s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.secondfront, .secondback {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.secondfront {
+	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
+	z-index: 2;
+}
+
+.secondback {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	background: #f8f8f8;
+}
+
+.secondfront .secondname {
+	font-size: 1em;
+	display: inline-block;
+	background: rgba(33, 33, 33, .8);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 15px 10px;
+	border-radius: 1px;
+	bottom: 0px;
+	left: 0%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+width: 90%;
+	text-align: center;
+}
+
+.secondback-logo {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 160px;
+	height: 117px;
+	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
+}
+
+.secondback-title {
+	font-weight: bold;
+	color: #00304a;
+	position: absolute;
+	top: 140px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-family: calbri;
+	font-size: 1em;
+}
+
+.secondback p {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0 1px;
+  font-family: arial;
+  line-height: 1em;
+}
+
+/* end second course*/		
+
+
+
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -52,6 +299,12 @@
   right: 0;
 
 }
+
+
+
+
+
+
 
 
 
@@ -491,10 +744,36 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 
 <div class="container"> 
+<div id="container">
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+      <span class="name">Budgetting</span>
+    </div>
+    <div class="back">
+      <div class="back-logo"></div>
+      <div class="back-title">Budget</div>
+      <p style="color:red">Paragraph goes here</p>
+    </div>
+  </div>
+</div>
+	 
 
+<div class="secondflip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="secondflipper">
+    <div class="secondfront">
+      <span class="secondname">Budgetting</span>
+    </div>
+    <div class="secondback">
+      <div class="secondback-logo"></div>
+      <div class="secondback-title">Financial</div>
+      <p style="color:red">Paragraph goes here</p>
+    </div>
+  </div>
+</div>	 
 	 
 </div>
-	
+</div>
 </div>
 
 
