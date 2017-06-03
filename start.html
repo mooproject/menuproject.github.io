@@ -9,6 +9,33 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: none;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0;
+  width: 62%;
+  
+}
+aside {
+  float: right;
+  margin: 0;
+  width: 30%;
+  
+}
+
+
+
 .btn-group .button {
     background-color: transparent; 
     border: none;
@@ -223,6 +250,7 @@ html { height: 100%; }
 	width:100%;
 	margin:-140px 80px;
 	position:relative;
+	
 }
 
 	
@@ -776,35 +804,32 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
-	
 
 <div id="content">
 	
-<div class="container"> 
 
- <form id="contact"  action="https://mooproject.github.io/menuproject.github.io/futureprofile.html" name="theform">
-	 <h3>INDUCTION</h3><br>
-	 	<iframe width="825" height="400" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br>
-   <h3>COMPLETE YOUR INDUCTION</h3><br>
-
-      <input placeholder="First name" type="text" tabindex="1"  onKeyup="checkform()" required autofocus><br>
-    
-      <input placeholder="Last name" type="text" tabindex="1"  onKeyup="checkform()" required autofocus><br>
-   
-      <input placeholder="Your Email Address" type="email" onKeyup="checkform()" tabindex="2" required><br>
-   
-      <input placeholder="Your Phone Number" type="tel" onKeyup="checkform()" tabindex="3" required><br>
-    
-      <input placeholder="Your Web Site starts with http://" type="url" onKeyup="checkform()" tabindex="4"  required><br>
+<div class="group">
+  <section>
+	 <h3>Welcome</h3><br>
+	 	<iframe width="500" height="300" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br> 
+</section>
+<aside>
+<h3>Get Start it</h3>
+<p>paragraph goes here!</p>
+</aside>
+<aside>
+<h3>Get Start it</h3>
+<p>paragraph goes here!</p>
+</aside>
+<aside>
+<h3>Get Start it</h3>
+<p>paragraph goes here!</p>
+</aside>
+</div>
 	
-      <input placeholder="Company name" type="text" tabindex="6" onKeyup="checkform()" required autofocus><br><br>
-   
-	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
-this.style.backgroundColor = '#7ca503'">
-	 
-</form>	
+
 </div>
-</div>
+
 <br><br><br><br>
   
 
