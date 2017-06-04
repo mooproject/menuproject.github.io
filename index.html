@@ -9,17 +9,35 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: none;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0;
+  width: 62%;
+  
+}
 
 .btn-group .button {
     background-color: transparent; 
     border: none;
     border-top: 2px solid black;
     color: white;
-    padding: 8px 8px;
+    padding: 9px 9px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
     float: left;
     font-weight: bold;
@@ -379,9 +397,10 @@ img {
      position: absolute;
     top: 190px;
     right: 300px;
-    width: 600px;
-    height: 200px;
+    width: 500px;
+    height: 50px;
     color: #fff;
+  
     
 }
 
@@ -420,12 +439,13 @@ img {
 
 .div7 {
      position: absolute;
-    top: 308px;
-    right: 110px;
-    width: 800px;
-    height: 400px;
+    top: 300px;
+    right: 230px;
+    width: 600px;
+    height: 40px;
     color: #fff;
     margin: 0;
+   
     
 }
 
@@ -433,14 +453,18 @@ img {
 	color: #e6ac00;
 }
 
-body {font-family: Verdana, Arial, sans-serif;
-background-color: #262626;
-z-index: 99;
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #262626;
+	z-index: 99;
 }
+
 p {
-color: #fff;
+	color: #fff;
 }
-wrapper {  background-color: #F4E8BC; 
+
+wrapper {  
+			background-color: #F4E8BC; 
 	        width: 90%;
 			margin: auto;
             color: #330000;
@@ -472,15 +496,16 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
    	padding-right: 200px;
     padding-bottom: 250px;
    	padding-left: 125px;
-   	margin: 0px 0px 0px 50px;
+   	margin: 0;
    	border-style: none;
+
    		
    		
 }
 
 nav { 
  	float: left; width: 20% auto; font-weight: 120%; letter-spacing: 0.1em;
-	text-align: left; background-color: #404040 ; margin: -146px 40px 40px 66px;  
+	text-align: left; background-color: #404040 ; margin: -146px 18px 18px 18px;  
 	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 12px 12px 0px 0px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
  	padding-top: 20px;
  	border-bottom: none;
@@ -520,10 +545,110 @@ footer { text-align: center;
  padding: 2.5%;
 clear: both; background-color: #ffffff; 
 }
+
 iframe {
+  width: 100%;
 	box-shadow: 5px 10px 5px;
 }
 
+
+
+/* for desktop screen 1080 */
+@media only screen and  (max-width: 1080px)
+{
+
+.logo {
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	
+   display: none;
+   		
+}
+
+iframe {
+  width: 100%;
+}
+
+
+h2 {
+color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
+ 	width: 139%;
+}
+
+.div2 {
+     position: absolute;
+    top: 170px;
+    right: 40px;
+    width: 200px;
+    height: 100px;
+    border: 3px ;
+   width: 20%;
+   height: auto;
+}
+
+.div3 {
+     position: absolute;
+    top: 170px;
+    right: 360px;
+    width: 520px;
+    height: 100px;
+    color: #fff;
+    
+}
+
+.btn-group .button {
+    background-color: transparent; 
+    border: none;
+    border-top: 2px solid black;
+    color: white;
+    padding-top: -60px; 
+}
+    
+.div7 {
+     position: absolute;
+    top: 260px;
+    right: 300px;
+    width: 600px;
+    height: 40px;
+    color: #fff;
+    margin: 0;
+    
+}
+
+.container {
+	
+	max-width: auto;
+	width: 150%;
+	margin:-10px 20px;
+	position:relative;
+
+} 
+ 
+        
+#content { 
+		width: 60%;
+        margin-left: 5%; 
+                     
+}
+aside { 
+		
+		width: 30%;  
+}
+            
+            
+
+nav { float: none;
+ width: auto;
+  margin-top: 0;	text-align: center;	  }
+                    
+nav ul { padding-left: 0;
+                }
+         
+nav li { display: inline;
+         margin: 0 2%; 
+		 }
+
+}
 
 /* for desktop */
 @media only screen and  (max-width: 1012px)
@@ -557,8 +682,17 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    height: auto;
 }
 
+.div3 {
+     position: absolute;
+    top: 170px;
+    right: 300px;
+    width: 500px;
+    height: 200px;
+    color: #fff;
+    
+}
 
-        
+  
 #content { 
 		width: 60%;
         margin-left: 5%; 
@@ -616,6 +750,18 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    height: auto;
 }
 
+.div3 {
+     position: absolute;
+    top: 168px;
+    right: 300px;
+    width: 400px;
+    height: 100px;
+    color: #fff;
+    
+}
+
+
+
 nav { float: none;
  width: auto;
   margin-top: 0;	text-align: center;	  }
@@ -635,15 +781,12 @@ nav li { display: inline;
 
 }
 
+
+
+
+
 /* for mobile */
 @media only screen and (max-width: 480px) {            
-            
-                 
-            
-            
-            
-            
-            
             
     iframe, object, embed {
     max-width: 100%;
@@ -710,7 +853,6 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div id="wrapper">
 <a class="logo" href="" ></a>
 
-
 <header>
 
 
@@ -728,12 +870,15 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <a href="#"> maximumexcellence.com</a>
 </div>
 	
-<h1>WELCOME</h1>
+	
+<h1>Welcome</h1>
 <div class="div3">
-<img src="saving.png" alt="" width="2100" height="800">
+<img src="saving.png" alt="" width="800" height="400">
 </div>
 
 
+  <section>
+  <div class="group">
 <div class="div7">
 <div class="btn-group">
   <a href="start.html" ><button class="button">Start Here</button></a>
@@ -741,8 +886,9 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
   <a href="#" ><button class="button" >Physical Excellence</button></a>
   <a href="#" ><button class="button" >Financial Excellence</button></a>
   </div>
+   </section>
 </div>
-
+</div>
 	
 	
 	
@@ -783,22 +929,22 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	
 <div class="container"> 
 
- <form id="contact"  action="https://mooproject.github.io/menuproject.github.io/futureprofile.html" name="theform">
+ <form id="contact"  action="futureprofile.html" name="theform">
 	 <h3>INDUCTION</h3><br>
 	 	<iframe width="825" height="400" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br>
    <h3>COMPLETE YOUR INDUCTION</h3><br>
 
-      <input placeholder="First name" type="text" tabindex="1"  onKeyup="checkform()" required autofocus><br>
+      <input placeholder="First name" type="text" tabindex="1"  name=firstname onKeyup="checkform()" required autofocus><br>
     
-      <input placeholder="Last name" type="text" tabindex="1"  onKeyup="checkform()" required autofocus><br>
+      <input placeholder="Last name" type="text" tabindex="1"  name=lastname onKeyup="checkform()" required autofocus><br>
+      
+      <input placeholder="Charater name" type="text" tabindex="1"  name=charater onKeyup="checkform()" required autofocus><br>
+      
+   <input placeholder="Birthday" type="text" tabindex="1"  name=birthday onKeyup="checkform()" required autofocus><br>
    
-      <input placeholder="Your Email Address" type="email" onKeyup="checkform()" tabindex="2" required><br>
+      <input placeholder="Your Email Address" type="email" name=Email onKeyup="checkform()" tabindex="2" required><br>
    
-      <input placeholder="Your Phone Number" type="tel" onKeyup="checkform()" tabindex="3" required><br>
-    
-      <input placeholder="Your Web Site starts with http://" type="url" onKeyup="checkform()" tabindex="4"  required><br>
-	
-      <input placeholder="Company name" type="text" tabindex="6" onKeyup="checkform()" required autofocus><br><br>
+      <input placeholder="Your Phone Number" type="tel" name=PhoneNumber onKeyup="checkform()" tabindex="3" required><br><br>
    
 	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
 this.style.backgroundColor = '#7ca503'">
