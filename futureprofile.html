@@ -694,54 +694,36 @@ var loadFile = function(event) {
 
 	
 	
-	
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+/* store cookies */	
+var createCookie = function(name, value, days) {
+    var expires;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
     }
-    return null;
+    else {
+        expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
 }
 
-//v. 4.0remove and format cookie
-function remove_unwanted(str) {  
-    
-  if ((str===null) || (str===''))  
-       return false;  
- else  
-   str = str.toString();
-    //clean space
-   str = str.replace(/%20/g, " ");
-    //clean !
-    str = str.replace(/%21/g, "!");
-   str = str.replace(/%24/g, "$"); 
-   str = str.replace(/%7C/g, " | ");
-  return str.replace(/[^\x20-\x7E]/g, '');  
-}  
-
-
-//v 4.0 save cookie
-function savecookie()
-{
-  delete_cookie('moo');
-   var date = new Date();
-   //keeps for a year
-    date.setTime(date.getTime() + Number(24) * 60 * 60 * 1000);
-   document.cookie = 'moo' + "=" + escape(shoppinglist.join(',')) + "; path=/;expires = " + date.toGMTString();
+function getCookie(c_name) {
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) {
+                c_end = document.cookie.length;
+            }
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return "";
 }
 
-
-//v 4.0 delete cookie
-function delete_cookie(name) {
-  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-
-
-	
-	
+/* end cookies */	
 	
 	
 	
@@ -762,6 +744,8 @@ jQuery(document).ready(function () {
     });
     jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
 });	
+
+
 	
 /* personal information for future profile */	
 function getParams(){
