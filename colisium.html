@@ -11,72 +11,48 @@
 <style>
 	
 	
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #cc9900;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 15px;
-  width: 160px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+.group:before,
+.group:after {
+  content: "";
+  display: table;
 }
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.group:after {
+  clear: both;
 }
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.group {
+  clear: none;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0;
+  width: 62%;
   
 }
 
-.button:hover span {
-  padding-right: 25px;
-
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-
-}
-
-
-
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
+.btn-group .button {
+    background-color: transparent; 
+    border: none;
+    border-top: 2px solid black;
     color: white;
-    background-color: transparent;
+    padding: 9px 9px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
 }
-a:hover {
-    color: #e6ac00;
-    background-color: transparent;
-    text-decoration: underline;
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
 }
-a:active {
-    color: green;
-    background-color: transparent;
-    text-decoration: underline;
+.btn-group .button:hover {
+    background-color: #e6ac00;
 }	
-
 
 	
 	
@@ -119,17 +95,42 @@ img {
 }
 
 
+.div6 {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px;
+}
 
 .div6 img {
 	 
 	position: relative;
-    top: -300px;
+    top: 0px;
     right: -20px;
     width: 100%;
-    height: auto;
+    height: 100%;
     border: 5px solide red;
-
+	margin: 0px 22px 18px 19px;
 }
+
+.div7 {
+     position: absolute;
+    top: 300px;
+    right: 230px;
+    width: 600px;
+    height: 40px;
+    color: #fff;
+    margin: 0;    
+}
+
+.div7:hover { 
+	color: #e6ac00;
+}
+
 
 .div1 {
    width: 100%;
@@ -145,24 +146,22 @@ img {
     
 }
 
-
 .div2 {
-     position: absolute;
-    top: 190px;
-    right: 40px;
+	position: absolute;
+    top: 210px;
+    right: 22px;
     width: 200px;
-    height: 80px;
+    height: 200px;
     border: 3px ;
 }
 
 .div3 {
      position: absolute;
-    top: 210px;
+    top: 190px;
     right: 300px;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 50px;
     color: #fff;
-    
 }
 
 .div4 {
@@ -218,11 +217,11 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
 .logo {
 	background-image: url(colisium.png);
 	background-repeat: no-repeat;
-		padding-top: -20px;
+	padding-top: -20px;
    	padding-right: 200px;
     padding-bottom: 250px;
    	padding-left: 125px;
-   	margin: 0px 0px 0px 50px;
+   	margin: 0;
    	border-style: none;
    		
    		
@@ -230,7 +229,7 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
 
 nav { 
  	float: left; width: 20% auto; font-weight: 120%; letter-spacing: 0.1em;
-	text-align: left; background-color: #404040 ; margin: -146px 40px 40px 66px;  
+	text-align: left; background-color: #404040 ; margin: -146px 18px 18px 18px;  
 	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 12px 12px 0px 0px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
  	padding-top: 20px;
  	border-bottom: none;
@@ -273,7 +272,7 @@ clear: both; background-color: #ffffff;
 
 
 /* for desktop */
-@media only screen and  (max-width: 1012px)
+@media only screen and  (max-width: 1082px)
 {
 
 .logo {
@@ -477,14 +476,29 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div class="div3">
 <img src="savingline.png" alt="" width="2200" height="900">
 </div>
-<div class="div2">
-<img src="retirement.png" alt="" width="400" height="300">
+
+  <section>
+  <div class="group">
+<div class="div7">
+<div class="btn-group">
+  <a href="start.html" ><button class="button">Start Here</button></a>
+  <a href="#" ><button class="button" >Mental Excellence</button></a>
+  <a href="#" ><button class="button" >Physical Excellence</button></a>
+  <a href="#" ><button class="button" >Financial Excellence</button></a>
+  </div>
+   </section>
 </div>
-</header> 
+</div>
 
+<div class="div2">
+	  <a href="#">  
+ <img  src="https://cdn.pbrd.co/images/eJU9QDskU.png" width="200" height="200"/>
+</a>
+</div>
 
+</header>
+ 
 <nav>
-
 <ul>
 <b><a href="index.html">INDUCTIONS</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
@@ -501,12 +515,9 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	 <div class="div6">
 	 <img src="Arena.png" alt="">
 	 </div>
-
-	
 </div>
 </div>
-
-  
+  <br><br><br>
 
 
 <footer>Copyright &copy; Maximize 2017</footer>
