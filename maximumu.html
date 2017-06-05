@@ -68,8 +68,9 @@
 }
 
 .front {
-	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
-	z-index: 2;
+	background: url(https://cdn.pbrd.co/images/evLSBdcYN.png); 
+	 background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .front img{
@@ -88,7 +89,6 @@
 .front .name {
 	font-size: 1em;
 	display: inline-block;
-	background: rgba(33, 33, 33, .8);
 	color: #f8f8f8;
 	font-family: Courier;
 	padding: 15px 10px;
@@ -112,14 +112,16 @@ width: 90%;
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
+	background: url(https://cdn.pbrd.co/images/evLSBdcYN.png); 
+	 background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .back-title {
 	font-weight: bold;
 	color: #00304a;
 	position: absolute;
-	top: 140px;
+	top: 80px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -130,6 +132,7 @@ width: 90%;
 
 .back p {
 	position: absolute;
+	top: 110px;
 	bottom: 0px;
 	left: 0;
 	right: 0;
@@ -141,16 +144,16 @@ width: 90%;
 
 
 /*second course*/
+
 .secondflip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  position: relative;
+ position: relative;
     width: 30%;
-    margin: 20px;
-display: inline-block;
-	
+    display:inline-block;
+	margin: 20px;
 }
 
 	.secondflip-container:hover .secondflipper,  
@@ -194,8 +197,13 @@ display: inline-block;
 }
 
 .secondfront {
-	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
-	z-index: 2;
+	background: url(https://cdn.pbrd.co/images/evLSBdcYN.png); 
+	 background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.secondfront img{
+	margin: 33px 80px 11px 23px;
 }
 
 .secondback {
@@ -210,12 +218,11 @@ display: inline-block;
 .secondfront .secondname {
 	font-size: 1em;
 	display: inline-block;
-	background: rgba(33, 33, 33, .8);
 	color: #f8f8f8;
 	font-family: Courier;
 	padding: 15px 10px;
 	border-radius: 1px;
-	bottom: 0px;
+	bottom: 80px;
 	left: 0%;
 	position: absolute;
 	text-shadow: 0.1em 0.1em 0.05em #333;
@@ -223,13 +230,20 @@ width: 90%;
 	text-align: center;
 }
 
+.secondback-logo img{
+	margin: 33px 80px 11px 23px;
+}
+
+
 .secondback-logo {
 	position: absolute;
 	top: 0px;
-	left: 10px;
-	width: 160px;
-	height: 117px;
-	background: url(https://cdn.pbrd.co/images/dOmufFlQX.png) 0 0 no-repeat;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn.pbrd.co/images/evLSBdcYN.png); 
+	 background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .secondback-title {
@@ -744,36 +758,36 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <br><br><br>
 
 <div id="content">
+<div class="container"> 
 
-
-
-<div id="container">
 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
   <div class="flipper">
     <div class="front">
     <img src="https://cdn.pbrd.co/images/eiT7M320W.png">
-      <span class="name">Budgeting</span>
+      <span class="name">Business Basics</span>
     </div>
     <div class="back">
     
     <a href="#">
       <div class="back-logo"><img src="https://cdn.pbrd.co/images/eiYSDPeOh.png"></div>
-      <div class="back-title">Budget</div>
-      <p style="color:red">Paragraph goes here</p>
+      <div class="back-title">Business Busics</div>
+      <p style="color:red">Paragraph goes here</p></a>
     </div> 
-  </div></a>
+  </div>
 </div>
 	 
 
 <div class="secondflip-container" ontouchstart="this.classList.toggle('hover');">
   <div class="secondflipper">
     <div class="secondfront">
-      <span class="secondname">Financial</span>
+    <img src="https://cdn.pbrd.co/images/eiT7M320W.png">
+      <span class="secondname">Budgeting</span>
     </div>
     <div class="secondback">
-      <div class="secondback-logo"></div>
-      <div class="secondback-title">Financial</div>
-      <p style="color:red">Paragraph goes here</p>
+     <a href="#">
+      <div class="secondback-logo"><img src="https://cdn.pbrd.co/images/eiYSDPeOh.png"></div>
+      <div class="secondback-title">Budgeting</div>
+      <p style="color:red">Paragraph goes here</p></a>
     </div>
   </div>
 </div>	 
