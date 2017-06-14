@@ -9,26 +9,252 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+
+#mymenu ul {
+  margin: 0;
+  padding: 0;
+  color: #604406;
+}
+
+#mymenu .mymain-menu {
+  display: none;
+  background-color: #f9dd9f;
+  color: #000;
+  
+  
+}
+
+.mymain-menu { width: 100%; }
+
+.mymain-menu aside p { color: black;}
+.mymain-menu aside p h4 { color: black;}
+
+.mymain-menu img {
+		float: left;
+		margin: 50px;
+}
+
+.mymain-menu aside {
+		float: left
+}
+
+#tk:checked + .mymain-menu {
+  display: inline-block;
+    color: #604406;
+  
+}
+
+#mymenu input[type="checkbox"], 
+#mymenu ul span.drop-icon {
+  display: none;
+
+}
+
+#mymenu li, 
+#mytoggle-menu, 
+#mymenu .sub-menu {
+  border-style: solid;
+ border-color: rgba(0, 0, 0, 0.1);
+ color: #604406;
+
+}
+
+#mymenu li, 
+#mytoggle-menu {
+  border-width: 0 0 1px;
+  background-color: transparent;
+  
+}
+
+#mymenu .sub-menu {
+ background-color: #444;
+  border-width: 1px 1px 0;
+  margin: 0 1em;
+  
+
+}
+
+#mymenu .sub-menu li:last-child {
+  border-width: 0;
+  color: #000;
+}
+
+#mytoggle-menu {
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+#mymenu li, 
+#mymenu a {
+  position: relative;
+  display: block;
+  color: #000;
+}
+
+#mymenu, 
+#mytoggle-menu {
+  background-color: #E5A200;
+
+}
+
+#mytoggle-menu, 
+#mymenu a {
+  padding: 1em 1.5em;
+}
+
+#mymenu a {
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out;
+}
+
+#mymenu a:hover {
+  background-color: white;
+  color: #604406;
+}
+
+#mymenu .sub-menu {
+  display: none;
+}
+
+#mymenu input[type="checkbox"]:checked + .sub-menu {
+  display: block;
+}
+
+#mymenu .sub-menu a:hover {
+
+}
+
+#mytoggle-menu .drop-icon, 
+#mymenu li label.drop-icon {
+  position: absolute;
+  right: 1.5em;
+  top: 1.25em;
+
+}
+
+#mymenu label.drop-icon, #tmyoggle-menu span.drop-icon {
+
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .01);
+  
+}
+
+#mymenu .drop-icon {
+  line-height: 1;
+
+}
+
+
+.btn-group .button {
+    background-color: transparent; 
+    border: none;
+    border-top: 2px solid black;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+    background-color: #e6ac00;
+}	
 	
-	
+
+
+
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: none;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0;
+  width: 62%;
+  
+}
+aside {
+  float: right;
+  margin: 0;
+  width: 30%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .client_logos {
-     position: absolute;
-    top: 350px;
-    right: 25px;
-    width: 76%;
-    height: 160px;
+     position: relative;
+    margin: -35px -45px -45px -45px;
+    width: 110% ;
+    height: 260px ;
 background-color: #333131;
 
 	border-radius: 2px;
 }
 
-.client_logos img {
-	 padding-top: 5px;
-	 padding-right: 8px;
+#head img  {
+position: absolute;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: -40px;
+    right: 350px;
+    width: 300px;
+    height: 140px;
+
+}
+
+#head img:hover {
+	 background-color: transparent;
 	
 }
+
+
+
+#loicon img {
+	 padding-top: 0px;
+    width: 120px;
+    margin: 5px 10px 25px 15px ;
+   padding-bottom: 0px;
+	float: left;
 	
 
+}
+	
+#loicon img:hover {
+	 background-color: rgba(204, 204, 204, 0.14);
+}
 
 
 a:link {
@@ -472,44 +698,81 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </nav> 
 
 <div id="content">
+
 <div class="container"> 
- <form id="contact"  name="theform">
+ 
 	<div class="client_logos">
-	
-      
-  <a href="#">
-<img style="display: inline; margin: 0px 5px 5px;" src="Buffet_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
+<div id="head">
+<center><img src="MaxCrusades.png" alt="" width="300" height="310" border="0"  /></center>
+</div><br><br><br><br><br>
+
+<div id="loicon">
+      <a href="#">
+<img style="display: inline;" src="all.png" alt="" width="140" height="140" border="0"  />
+</a></div>
+
+<div id="loicon">
+<a href="#">
+<img style="display: inline; "  src="collisium.png" alt="" width="155" height="155" border="0"  />
+</a></div>
+  
+<div id="loicon">
  <a href="#">
-<img style="display: inline; margin: 0px 5px 5px;"  src="Bezos_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
+<img style="display: inline;"  src="recruit.png" alt="" width="140" height="140" border="0"  />
+</a></div>
+
+<div id="loicon">
   <a href="#">
-<img style="display: inline; margin: 0px 5px 5px;"  src="Branson_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
+<img style="display: inline; "  src="realEstate.png" alt="" width="140" height="140" border="0"  />
+</a></div>
 
+<div id="loicon">
+<a href="#">
+<img style="display: inline;" src="retail.png" alt="" width="140" height="140" border="0"  />
+</a></div>
+
+<div id="loicon">
  <a href="#">
-<img style="display: inline; margin: 0px 5px 5px;"  src="Gates_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
-<a href="#">
-<img style="display: inline; margin: 0px 5px 5px;"  src="Robbins_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
+<img style="display: inline; "  src="entertainment.png" alt="" width="140" height="140" border="0"  />
+</a></div><br><br><br><br>
 
+<div id="loicon">
 <a href="#">
-<img style="display: inline; margin: 0px 5px 5px;"  src="Oprah_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
+<img style="display: inline; "  src="enterprenaun.png" alt="" width="150" height="150" border="0"  />
+</a></div>
+
+<div id="loicon">
 <a href="#">
-<img style="display: inline; margin: 0px 5px 5px;"  src="Speyer_Archetype.png" alt="" width="100" height="140" border="0"  />
-</a>
-<a href="#">
-<img style="display: inline; margin: 0px 5px 5px;" src="all.png" alt="" width="100" height="140" border="0"  />
-</a>
-</div>
-</form>
-</div>	
+<img style="display: inline; "  src="nonProfit.png" alt="" width="140" height="140" border="0"  />
+</a></div>	
 </div>
 
+<br><br><br><br>
+
+<div id="mymenu">
+  <label for="tk" id="mytoggle-menu">What am I going to learn if i join the colisium? <span class="drop-icon">&#9776;</span></label>
+  <input type="checkbox" id="tk">
+  <ul class="mymain-menu clearfix">
+    <section>
+    <img src="Arena.png" width="250" height="250">
+    </section>
+    <aside>
+<p><b>Get Start it</b></p>
+<p>paragraph goes here!</p><br><br>
+<div class="class1" onclick="toggleClass(this)">
+      <h4>Mark as completed</h4>
+    </div>
+</aside>
+  </ul>
+</div><br>
+</div>
 
   
+</div>
+	
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 <footer>Copyright &copy; Maximize 2017</footer>
