@@ -93,7 +93,7 @@
 }
 
 #mymenu, 
-#mytoggle-menu {
+#mytoggle-menu {  width: 80%; 
   background-color: #E5A200;
 
 }
@@ -128,7 +128,7 @@
 #mytoggle-menu .drop-icon, 
 #mymenu li label.drop-icon {
   position: absolute;
-  right: 1.5em;
+  right: -3em;
   top: 1.25em;
 
 }
@@ -147,31 +147,6 @@
 
 }
 
-
-.btn-group .button {
-    background-color: transparent; 
-    border: none;
-    border-top: 2px solid black;
-    color: white;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    cursor: pointer;
-    float: left;
-    font-weight: bold;
-     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
-}
-.btn-group .button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-}
-.btn-group .button:hover {
-    background-color: #e6ac00;
-}	
-	
 
 
 
@@ -203,12 +178,56 @@ aside {
 
 
 
+.btn-group .button {
+    background-color: transparent; 
+    border: none;
+    border-top: 2px solid black;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+    background-color: #e6ac00;
+}	
+
+.class1{ float:left; margin:15px; background:#09C; width:80%; height:20%;  border-radius: 2px;cursor:pointer; }
+.class2{ float:left; margin:10px; background:#0C0; width:80%; height:20%; border-radius: 2px; cursor:pointer; }
 
 
+.submenu {
+     position: absolute;
+    top: 300px;
+    right: 210px;
+    width: 600px;
+    height: 40px;
+    color: #fff;
+    margin: 0;
+   
+    
+}
 
+.submenu:hover { 
+	color: #e6ac00;
+}
 
+h4 {color: white;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
 
-
+}
 
 
 
@@ -217,7 +236,7 @@ aside {
 .client_logos {
      position: relative;
     margin: -35px -45px -45px -45px;
-    width: 110% ;
+    width: 100% ;
     height: 260px ;
 background-color: #333131;
 
@@ -407,7 +426,7 @@ h1 { color: #e2c810; visibility: hidden}
     margin: 20px}
 	
 	h3 {color: #e9dfaf;}
-	h4 {color: #efe7c3;}
+	
 
 header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
  color: #003300;
@@ -812,6 +831,18 @@ function checkform()
       
     }
 	
+	
+	
+/* toggle button */	
+function toggleClass(el){
+	if(el.className == "class1"){
+		el.className = "class2";
+	} else {
+		el.className = "class1";
+	}
+}
+	
+
 </script>
 </body>
 
