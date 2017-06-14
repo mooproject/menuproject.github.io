@@ -218,28 +218,30 @@ header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
 	background-image: url(colisium.png);
 	background-repeat: no-repeat;
 	padding-top: -20px;
-   	padding-right: 200px;
-    padding-bottom: 250px;
+   	padding-right: 132px;
+    padding-bottom: 230px;
    	padding-left: 125px;
-   	margin: 0;
+   margin: -38px -6px -6px -6px; 
    	border-style: none;
-   		
-   		
+   		position: fixed;
+   		z-index: 9999;
+
 }
 
 nav { 
  	float: left; width: 20% auto; font-weight: 120%; letter-spacing: 0.1em;
-	text-align: left; background-color: #404040 ; margin: -146px 18px 18px 18px;  
-	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 12px 12px 0px 0px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
+	text-align: left; background-color: #404040 ; margin: -146px 10px 10px 10px;  
+	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 6px 6px 2px 2px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
  	padding-top: 20px;
  	border-bottom: none;
  	border-style: none;
  	float: left;
 position:fixed;
-top: 380px;
+top: 344px;
  height: auto;
   	text-align: center;	
-   
+   z-index: 9999;
+
  }
 
 nav ul {list-style-type: none; margin: 0; padding: 0px; }
@@ -322,7 +324,7 @@ nav { float: none;
  width: auto;
   margin-top: 0;	text-align: center;	  }
                     
-nav ul { padding-left: 0; display: none;
+nav ul { padding-left: 0;
                 }
          
 nav li { display: inline;
@@ -363,14 +365,24 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    height: auto;
 }
 
+nav { float: none;
+ width: auto;
+  margin-top: 0;	text-align: center;	  }
+          
 #content { width: 60%;
                      margin-left: 5%; }
            
 aside { width: 30%;  
             }
+           
+nav ul { padding-left: 0;
+                }
+         
+nav li { display: inline;
+         margin: 0 2%; 
+		 }
 
-
-
+}
 
 /* for mobile */
 @media only screen and (max-width: 480px) {            
@@ -445,7 +457,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <body>
 
 <div id="wrapper">
-<a class="logo"  ></a>
+<a class="logo" href="" ></a>
 
 <header>
 
