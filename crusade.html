@@ -234,7 +234,7 @@ h4 {color: white;
 
 .client_logos {
      position: relative;
-    margin: -35px -45px -45px -45px;
+    margin: -35px -45px -45px -5px;
     width: 100% ;
     height: 260px ;
 background-color: #333131;
@@ -242,7 +242,7 @@ background-color: #333131;
 	border-radius: 2px;
 }
 
-#head img  {
+#head img  {		
 position: absolute;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -376,13 +376,15 @@ img {
 
 .div3 {
      position: absolute;
-    top: 210px;
+    top: 190px;
     right: 300px;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 50px;
     color: #fff;
+  
     
 }
+
 
 .div4 {
      position: absolute;
@@ -393,15 +395,45 @@ img {
     color: #fff;    
 }
 
-.div5 {
+.div5Link {
      position: absolute;
     top: 50px;
     right: 340px;
+    text-align: right; 
+    color: white;
+}
+
+.div5Link  a:link {
     color: #fff;
+    text-decoration: none;
+}
+
+.div5Link a:visited {
+    color: white;
+} 
+
+/* mouse over link */
+.div5Link a:hover {
+    color: #e6ac00; 
+}
+
+
+
+.div7 {
+     position: absolute;
+    top: 300px;
+    right: 230px;
+    width: 600px;
+    height: 40px;
+    color: #fff;
+    margin: 0;
+   
     
 }
-	
 
+.div7:hover { 
+	color: #e6ac00;
+}
 body {font-family: Verdana, Arial, sans-serif;
 background-color: #262626;
 z-index: 99;
@@ -550,6 +582,174 @@ nav li { display: inline;
 
 }
 
+
+/* for desktop screen 1080 */
+@media only screen and  (max-width: 1085px)
+{
+
+.logo {
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	
+   display: none;
+   		
+}
+
+iframe {
+  width: 100%;
+}
+
+
+h2 {
+color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
+ 	width: 139%;
+}
+
+.div2 {
+     position: absolute;
+    top: 170px;
+    right: 40px;
+    width: 200px;
+    height: 100px;
+    border: 3px ;
+   width: 20%;
+   height: auto;
+}
+
+.div3 {
+     position: absolute;
+    top: 170px;
+    right: 360px;
+    width: 520px;
+    height: 100px;
+    color: #fff;
+    
+}
+
+.btn-group .button {
+    background-color: transparent; 
+    border: none;
+    border-top: 2px solid black;
+    color: white;
+    padding-top: -60px; 
+}
+    
+.div7 {
+     position: absolute;
+    top: 260px;
+    right: 300px;
+    width: 600px;
+    height: 40px;
+    color: #fff;
+    margin: 0;
+    
+}
+
+.container {
+	
+	max-width: auto;
+	width: 150%;
+	margin:-10px 20px;
+	position:relative;
+
+} 
+ 
+        
+#content { 
+		width: 60%;
+        margin-left: 5%; 
+                     
+}
+aside { 
+		
+		width: 30%;  
+}
+            
+            
+
+nav { float: none;
+ width: auto;
+  margin-top: 0;	text-align: center;	  }
+                    
+nav ul { padding-left: 0;
+                }
+         
+nav li { display: inline;
+         margin: 0 2%; 
+		 }
+
+}
+
+/* for desktop */
+@media only screen and  (max-width: 1012px)
+{
+
+.logo {
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	
+   display: none;
+   		
+}
+
+iframe, object, embed {
+    max-width: 160%;
+}
+
+h2 {
+color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
+ 	width: 139%;
+}
+
+.div2 {
+     position: absolute;
+    top: 170px;
+    right: 40px;
+    width: 200px;
+    height: 100px;
+    border: 3px ;
+   width: 20%;
+   height: auto;
+}
+
+.div3 {
+     position: absolute;
+    top: 170px;
+    right: 300px;
+    width: 500px;
+    height: 200px;
+    color: #fff;
+    
+}
+
+  
+#content { 
+		width: 60%;
+        margin-left: 5%; 
+                     
+}
+aside { 
+		
+		width: 30%;  
+}
+            
+            
+
+nav { float: none;
+ width: auto;
+  margin-top: 0;	text-align: center;	  }
+                    
+nav ul { padding-left: 0;
+                }
+         
+nav li { display: inline;
+         margin: 0 2%; 
+		 }
+
+}
+
+
+
 /* for tablet */
 @media only screen and (max-width: 768px) 
 {
@@ -688,16 +888,40 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
   <div id="myBar">0%</div>
 </div>
 </div>	
-<div class="div5">
-<a href=""> Logout</a>
+<div class="div5Link">
+<a href=""> Logout</a><br><br>
+<a href="#"> maximumexcellence.com</a>
 </div>
 	
-<h1>WELCOME</h1>
+	
+<h1>Welcome</h1>
 <div class="div3">
-<img src="savingline.png" alt="" width="2200" height="900">
+<img src="saving.png" alt="" width="800" height="400">
 </div>
+
+
+  <section>
+  <div class="group">
+<div class="div7">
+<div class="btn-group">
+  <a href="start.html" ><button class="button">Start Here</button></a>
+  <a href="#" ><button class="button" >Mental Excellence</button></a>
+  <a href="#" ><button class="button" >Physical Excellence</button></a>
+  <a href="#" ><button class="button" >Financial Excellence</button></a>
+  </div>
+   </section>
+</div>
+</div>
+	
+	
+	
+	
 <div class="div2">
-<img src="retirement.png" alt="" width="400" height="300">
+	  <a href="#">  
+ <img  src="https://cdn.pbrd.co/images/eJU9QDskU.png" width="200" height="200"/>
+</a>
+</div>
+
 </div>
 </header> 
 
