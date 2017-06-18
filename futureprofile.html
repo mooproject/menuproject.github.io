@@ -73,7 +73,7 @@ section {
 	
 .div9 {
 	 position: absolute;
-    top: 400px;
+    top: 500px;
     right: 410px;
     height:120px;
   width:120px;
@@ -83,7 +83,7 @@ border-radius: 1px;
 
 .div10  {
 	   position: absolute;
-    top: 340px;
+    top: 470px;
     right: 360px;
     width: 450px;
     height: 250px;
@@ -92,13 +92,21 @@ border-radius: 1px;
 }
  .div10 p {
  			color: black;	
- 			margin: 0px 5px 8px 15px;	
+ 			margin: 4px 5px 8px 15px;	
  }
  
 .div10 .flname p {
  			display: inline-block;
  			font-size: 18px;
  			margin: 22px 2px 18px 15px;
+ }
+ 
+ .charName  {
+ 			position: absolute;
+ 			font-size: 18px;
+ 			padding-top: 0px;
+ 			padding-bottom: 0px;
+ 			margin: 128px 2px 18px 722px;
  }
 
 .div8 img{
@@ -276,7 +284,7 @@ img {
 .div8 img{
 	border: .2px solid white;
 	   position: block;
-    top: 380px;
+    top: 500px;
     right: 370px;
     width: 450px;
     height: 250px;
@@ -380,7 +388,7 @@ wrapper {  background-color: #F4E8BC;
 h1 { color: #e2c810; visibility: hidden}
 
 
- h2 { color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
+ h2 { color: #e2c810; text-align: center;  font-weight: bold; 
  	width: 710px;
     
     padding: 20px 8px ;
@@ -1117,7 +1125,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	
 <div id="content">
 	
-
+<h2>YOUR FUTURE BUSINESS CARD</h2>
 <div class="div8"> 
  
 	<img src="https://cdn.pbrd.co/images/d92p5NLW7.png" alt="" width="200" height="300" />
@@ -1128,12 +1136,11 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <strong><p  id="firstname"></p></strong>
  <strong><p  id="lastname"></p></strong>
  </div>
-  <p id="birthday"></p>
-    <p id="Email"></p>
-      <p id="PhoneNumber"></p><br><br>
-      <div class="flname">
-      <p id="charater"></p>
-  </div>
+ <p id="Email"></p>
+  <p id="PhoneNumber"></p>
+      <p id="birthday"></p><br><br>
+      <p id="futureJobTitle"></p>
+       <p id="futureCompany"></p>
 </div>
 </font>
 
@@ -1142,7 +1149,9 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <input type="file" onchange="loadFile(event)" class="file-upload-input"><br>
 <img id="output" src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="heigth: 120px; width: 120px;" alt="Image preview...">
 </div>
-	
+	<div class="charName">
+        <p id="charater"></p>
+</div>
 <div class="div7">
 <img src="https://cdn.pbrd.co/images/adfFcRQFf.png" alt="" width="200" height="300" />	
 </div>		
@@ -1266,17 +1275,26 @@ return params;
 params = getParams();
 firstname = unescape(params["firstname"]);
 lastname = unescape(params["lastname"]);
-charater = unescape(params["charater"]);
-birthday = unescape(params["birthday"]);
 email = unescape(params["Email"]);
 tel = unescape(params["PhoneNumber"]);
+birthday = unescape(params["birthday"]);
+futureJobTitle = unescape(params["futureJobTitle"]);
+futureCompany = unescape(params["futureCompany"]);
+charater = unescape(params["charater"]);
+
+
+
 
 document.getElementById("firstname").innerHTML = ( firstname + " ");
 document.getElementById("lastname").innerHTML = (lastname + " ");
-document.getElementById("charater").innerHTML = ( charater + "<br>");
-document.getElementById("birthday").innerHTML = ( birthday + "<br>");
 document.getElementById("Email").innerHTML = ( email + "<br>");
 document.getElementById("PhoneNumber").innerHTML = ( tel + "<br>");
+document.getElementById("birthday").innerHTML = ( birthday + "<br>");
+document.getElementById("futureJobTitle").innerHTML = ( futureJobTitle + "<br>");
+document.getElementById("futureCompany").innerHTML = ( futureCompany + "<br>");
+document.getElementById("charater").innerHTML = ( charater + "<br>");
+
+
 	
 	
 </script>
