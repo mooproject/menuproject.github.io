@@ -10,6 +10,34 @@
 
 <style>
 
+.top img {width: 100%;}
+
+.box {
+  float: left;
+  width: 150px;
+  margin: 20px;
+}
+
+.box .top {
+ 
+  background-color: none;
+border: 3px solid red;
+  color: white;
+  cursor: pointer;
+}
+
+.box .bottom {
+  padding: 12px;
+  background-color: none;
+  color: white;
+  display: none;
+}
+
+.bottom img {width: 100%; margin: -18px -4px 0px -10px; }
+
+
+
+
 .MyDropMenu {
 		display: none;
 }
@@ -1033,6 +1061,22 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 <br><br><br><br><br><br><br>
 
+
+  <div class="box">
+    <div class="top">
+   <img src="https://cdn.pbrd.co/images/7FmmoUGW.png">
+   
+    <div class="bottom">
+       <img src="https://cdn.pbrd.co/images/1f1Gh5hSW.png">
+    </div>
+  </div> </div>
+ 
+
+<br><br><br><br><br>
+
+
+
+
 <div id="mymenu">
   <label for="tk" id="mytoggle-menu">What am I going to learn if i join the colisium? <span class="drop-icon">&#9776;</span></label>
   <input type="checkbox" id="tk">
@@ -1105,7 +1149,14 @@ function toggleClass(el){
 		el.className = "class1";
 	}
 }
-	
+
+/* toggle box */
+$('.top').on('click', function() {
+	$parent_box = $(this).closest('.box');
+	$parent_box.siblings().find('.bottom').slideUp();
+	$parent_box.find('.bottom').slideToggle(1000, 'swing');
+});
+
 
 </script>
 </body>
