@@ -33,7 +33,7 @@
   display: none;
 }
 
-.bottom img {width: 100%; margin: -18px -4px 0px -10px; }
+.bottom img {width: 100%; margin: 20px 2px 0px 10px; }
 
 
 
@@ -1067,11 +1067,12 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
   <div class="box">
     <div class="top">
-   <img src="https://cdn.pbrd.co/images/7FmmoUGW.png">
-   
-    <div class="bottom">
+     <div class="bottom">
        <img src="https://cdn.pbrd.co/images/1f1Gh5hSW.png">
     </div>
+   <img src="https://cdn.pbrd.co/images/7FmmoUGW.png">
+   
+   
   </div> </div>
  
 
@@ -1160,6 +1161,15 @@ $('.top').on('click', function() {
 	$parent_box.find('.bottom').slideToggle(1000, 'swing');
 });
 
+
+
+
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
 
 </script>
 </body>
