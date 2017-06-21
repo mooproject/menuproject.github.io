@@ -10,6 +10,19 @@
 
 <style>
 
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 80px;
+    cursor: pointer;
+    float: left;
+}
+
+
 
 .MyDropMenu {
 		display: none;
@@ -958,6 +971,16 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
       
       <input placeholder="Charater name" type="text" tabindex="7"  name=charater onKeyup="checkform()" required autofocus><br><br>
    
+<br><br>
+<div class="image-upload">
+    <label for="file-input">
+        <img src="https://cdn.pbrd.co/images/ao5zvZb44.png" style="width: 80px; height: 80px; "/>
+    </label>
+
+    <input id="file-input" type="file"/>
+</div>
+
+<br><br><br><br>
       
 	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
 this.style.backgroundColor = '#7ca503'">
