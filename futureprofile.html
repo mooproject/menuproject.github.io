@@ -1141,6 +1141,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 <div class="div10"> 
 <div class="flname">
+<p id="myPhoto"></p>
 <strong><p  id="firstname"></p></strong>
  <strong><p  id="lastname"></p></strong>
  </div>
@@ -1282,6 +1283,7 @@ params[nameVal[0]] = nameVal[1];
 return params;
 }
 params = getParams();
+myPhoto = unescape(params["myPhoto"]);
 firstname = unescape(params["firstname"]);
 lastname = unescape(params["lastname"]);
 email = unescape(params["Email"]);
@@ -1293,7 +1295,7 @@ charater = unescape(params["charater"]);
 
 
 
-
+document.getElementById("myPhoto").innerHTML = ( myPhoto + " ");
 document.getElementById("firstname").innerHTML = ( firstname + " ");
 document.getElementById("lastname").innerHTML = (lastname + " ");
 document.getElementById("Email").innerHTML = ( email + "<br>");
