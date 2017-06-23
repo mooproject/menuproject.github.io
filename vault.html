@@ -10,17 +10,34 @@
 
 <style>
 
-img {
+.button {
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 23px 13px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid #cc9966; 
+}
+
+.button:hover { background-color: #ccc066;}
+
+.myImg img{
 position: absolute;
 width: 98%;
-height: 100%;
+height: 120%;
     left: 12px;
     top: 10px;
-    z-index: -1;}
+    z-index: -1;
+
+}
 
 video #watchMe {
 	width: 100%;
-	height: 80%;
+	height: 100%;
     z-index: 9999;
     position:relative;
    
@@ -30,14 +47,16 @@ body {
 		background-color: black;
 }
 
+#hideMe .btn a{visibility:hidden;}
+
 #hideMe {
-    -moz-animation: cssAnimation 0s ease-in 8s forwards;
+    -moz-animation: cssAnimation 0s ease-in 10s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 8s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 10s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 8s forwards;
+    -o-animation: cssAnimation 0s ease-in 10s forwards;
     /* Opera */
-    animation: cssAnimation 0s ease-in 8s forwards;
+    animation: cssAnimation 0s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -68,11 +87,16 @@ body {
 </video></center>
 </div>
 
+<div class="myImg">
+<img  src="InnerVaultFadeToBlank.png" />
+</div>
 
 
- <img  src="InnerVaultFadeToBlank.png" />
+<a href="index.html" class="button"> Back </a>
 
-     
+
+
+
 <script>	
 	
 var video = document.getElementById('watchMe');
