@@ -464,14 +464,37 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 
 }
 
-footer { text-align: center;
- font-size: 80%;
- font-style: italic;
- color: #003300;
- padding: 2.5%;
-clear: both; background-color: #ffffff; 
+footer { 
+	display: fixed;
+	text-align: center;
+ 	font-size: 80%;
+ 	font-style: italic;
+ 	color: #003300;
+	 padding: 2.5%;
+	clear: both; 
+	background-color: rgba(248, 235, 221, 0.03); 
+	width: 95%;
+	height: auto;
 
 }
+
+.floating-box {
+ display: inline-block;
+	color: white;
+    margin: center;
+    width: 100px;
+    height: 100px;
+
+    padding:  40px 100px 40px 40px;
+}
+
+.after-box {
+	color: white;
+	text-align: right;
+    clear: right;  
+    padding-top: 80px;
+}
+
 
 iframe {
   width: 100%;
@@ -1024,13 +1047,22 @@ this.style.backgroundColor = '#7ca503'">
 	 
 </form>	
 </div>
-
+</div>
+  </div>
+  
 <br><br><br><br><br><br><br><br>
 <br><br><br><br>
 <br><br><br><br>
-<footer>Copyright &copy; Maximize Excellence 2017</footer>
-</div>
-  </div>
+<footer>
+
+<div class="floating-box">About</div>
+<div class="floating-box">Policy</div>
+<div class="floating-box">Term of use</div><br><br>
+<div class="after-box"><img src="ColiseumFooter.png" width="100px" height="100px"></div><br><br>
+<div class="after-box">Copyright Maximize Excellence 2017</div>
+
+</footer>
+
 </div>
 <script>	
 	
