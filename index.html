@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+#copy {padding: 10px; margin-right: -50px;}
+
+#copy img{width: 120px; height: 90px;}
+
+
 
 .image-upload > input
 {
@@ -84,7 +89,7 @@ section {
   
 }
 
-.button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 23px;  margin-top: 10px;}
+.button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 30px; margin-top: -10px;}
 
 .button1:hover {
     background-color: #00e600;
@@ -95,14 +100,14 @@ section {
    
     color: white;
     padding: 10px;
+    padding-right: -14px;
  float: left;
- margin-top: 20px;
- margin-bottom: 10px;
- margin-right: -3px;
+ 
+   margin-right: 6px;
     text-align: block;
     text-decoration: none;
     display: inline-block;
-    font-size: 8px;
+    font-size: 10px;
     cursor: pointer; 
     font-weight: bold;
     
@@ -302,28 +307,26 @@ img {
 
 .div2 a{
      position: absolute;
-    top: 180px;
+    top: 120px;
     right: 0px;
-    width: 340px;
-    height: 300px;
-
-  
+    width: 240px;
+    height: 210px;
 }
 
 
 
 #myVault img{
     position: absolute;
-    top: 160px;
+    top: 40px;
     right: 0px;
-    width: 300px;
-    height: 45% ;
-   border: 2px solid red;
+    width: 230px;
+    height: 100% ;
+   
 }
 
 .div3 {
      position: absolute;
-    top: 190px;
+    top: 170px;
     right: 380px;
     width: 500px;
     height: 50px;
@@ -363,12 +366,15 @@ img {
 
 
 .div7 {
+	position: block;
    width: 60%; 
-   height: 83px;
+   height: auto;
     text-align: right;
     color: #fff;
-    padding-top: 20px;
-	margin: 0px 0px -4px 280px;   
+    padding-top: 200px;
+    padding-bottom: 0px;
+	margin: 0px 0px -260px 290px;   
+	
 }
 
 
@@ -402,14 +408,13 @@ h1 { color: #e2c810; visibility: hidden}
 	h3 {color: #e9dfaf;}
 	h4 {color: #efe7c3;}
 
-.header { background-color: #2874A6;
- color: #003300;
- padding-top: 20px;
- background-image: url(vault.png);
- background-size: 360px 390px ;
- background-attachment: fixed;
-    background-position: right; 
-    background-repeat: no-repeat;
+.header { 
+	width: 100%;
+	height: 55%;
+	background-color: #2874A6;
+ 	color: #003300;
+	 padding-top: 10px;
+	
 }
 
 
@@ -474,26 +479,12 @@ footer {
 	clear: both; 
 	background-color: rgba(248, 235, 221, 0.03); 
 	width: 95%;
-	height: auto;
+	height: 50px;
 
 }
 
-.floating-box {
- display: inline-block;
-	color: white;
-    margin: center;
-    width: 100px;
-    height: 100px;
-
-    padding:  40px 100px 40px 40px;
-}
-
-.after-box {
-	color: white;
-	text-align: right;
-    clear: right;  
-    padding-top: 80px;
-}
+.indent-1 {float: left; }
+    .indent-1 section {width: 50%; float: left; color: white; }
 
 
 iframe {
@@ -966,13 +957,6 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <a href="#"> maximumexcellence.com</a>
 </div>
 	
-	
-<h1>Welcome</h1>
-<div class="div3">
-<img src="saving.png" alt="" width="800" height="400">
-</div>
-
-
 
   <div class="div7">
   <div class="group">
@@ -985,13 +969,19 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <br><br>
 </div>
 </div>
+
+<h1>Welcome</h1>
+<div class="div3">
+<img src="saving.png" alt="" width="460" height="400">
 </div>
 
 
+
 <div class="div2">
-	  <a href="vault.html">
-	  
-</a>
+<a href="vault.html">
+<div id="myVault">
+<img src="vault.png" ></a>
+</div>
 </div>
 
 
@@ -1012,7 +1002,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
-	<br><hr><br>
+	
 
 <div id="content">
 	
@@ -1046,22 +1036,34 @@ this.style.backgroundColor = '#7ca503'">
 	 
 </form>	
 </div>
-</div>
-  </div>
+
   
 <br><br><br><br><br><br><br><br>
 <br><br><br><br>
 <br><br><br><br>
 <footer>
 
-<div class="floating-box">About</div>
-<div class="floating-box">Policy</div>
-<div class="floating-box">Term of use</div><br><br>
-<div class="after-box"><img src="ColiseumFooter.png" width="100px" height="100px"></div><br><br>
-<div class="after-box">Copyright Maximize Excellence 2017</div>
+<section class="indent-1">
+    <!-- Section 1 --> 
+    <section>
+        <div><b>MAXIMIZE EXCELLENCE</b></div><br>
+        <div><a href="www.maximizexellence.com" color="white"></a>www.maximizexellence.com</div>
+        <div>	&copy; Copyright Maximize Excellence 2017</div>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <div><b>MAXIMIZE EXCELLENCE</b></div><br>
+        <div>Terms of use</div>
+        <div>Privacy Policy</div>
+    </section>
+</section>  
+<div id="copy"><img src="ColiseumFooter.png" width="130" height="100"></div>
+
 
 </footer>
-
+</div>
+  </div>
 </div>
 <script>	
 	
