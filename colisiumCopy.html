@@ -10,6 +10,33 @@
 
 <style>
 
+
+
+.MyDropMenu {
+		display: none;
+}
+
+
+	
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: none;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0;
+  width: 62%;
+  
+}
+
 .button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 30px; margin-top: -10px;}
 
 .button1:hover {
@@ -18,11 +45,13 @@
 
 .btn-group .botmenu {
     background-color: transparent; 
+   
     color: white;
     padding: 10px;
-    padding-right: -10px;
-    float: left;
-   margin-right: -5px;
+    padding-right: -14px;
+ float: left;
+ 
+   margin-right: 6px;
     text-align: block;
     text-decoration: none;
     display: inline-block;
@@ -36,40 +65,9 @@
 }
 .btn-group .botmenu:hover {
     background-color: #e6ac00;
-    font-size: 11.3px;
 }	
-
-.MyDropMenu {
-		display: none;
-}
-
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: none;
-  *zoom: 1;
-}
-.section {
- 
-  margin: 0;
-  width: 62%;
-  padding-left: 12px;
-}
-aside {
- position: absolute;
-    top: 400px;
-    right: 0px;
-    width: 280px;
-    height: 210px;
-
-}	
+	
+	
 	
 	
 #myProgress {
@@ -94,15 +92,6 @@ aside {
 	
 	
 
-.container {
-	
-	max-width:400px;
-	width:100%;
-	margin:-140px 80px;
-	position:relative;
-	
-}	
-
 .wrap {
   width:800px;
   margin:0 auto;
@@ -118,6 +107,64 @@ img {
     
 }
 
+#myVault img{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 230px;
+    height: 100% ;
+   
+}
+
+.div6 {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px;
+}
+
+.div6 img {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px 22px 18px 19px;
+	padding: 43px;
+}
+
+.vault img{
+     position: absolute;
+    top: 158px;
+    right: -5px;
+    width: auto;
+    height: 30%;
+    box-shadow: 0 15px 20px 0px black;
+}
+
+.div7 {
+   width: 100%;
+    height: 60px;  
+   background-color: #515050;
+    text-align: right;
+    color: #fff;
+    padding-top: 50px;
+	margin: -20px 0px;
+   box-shadow: 10px 0px 30px 0px  black;
+}
+
+
+.div7:hover { 
+	color: #e6ac00;
+}
+
+
 .div1 {
    width: 100%;
     height: 70px;  
@@ -129,94 +176,41 @@ img {
    box-shadow: 0px 10px 18px 0px  black;
 }
 
-.div2 a{
-     position: absolute;
-    top: 120px;
-    right: 0px;
-    width: 260px;
-    height: 210px;
+.div2 {
+	position: absolute;
+    top: 210px;
+    right: 22px;
+    width: 200px;
+    height: 200px;
+    border: 3px ;
 }
 
-
-
-#myVault img{
-    position: absolute;
-    top: 40px;
-    right: 0px;
-    width: 260px;
-    height: 100% ;
-   
-}
-
-.div3 img{
+.div3 {
      position: absolute;
-    top: 170px;
-    right: 340px;
-    width: 580px;
-    height: 120px;
+    top: 190px;
+    right: 300px;
+    width: 500px;
+    height: 50px;
     color: #fff;
 }
 
 .div4 {
      position: absolute;
-    top: 45px;
-    right: 74px;
-    width: 	140px;
+    top: 75px;
+    right: 70px;
+    width: 136px;
     height: 80px;
     color: #fff;    
 }
 
-.div5Link {
+.div5 {
      position: absolute;
     top: 50px;
     right: 340px;
-    text-align: right; 
-    color: white;
-}
-
-.div5Link  a:link {
     color: #fff;
-    text-decoration: none;
-}
-
-.div5Link a:visited {
-    color: white;
-} 
-
-/* mouse over link */
-.div5Link a:hover {
-    color: #e6ac00; 
-}
-
-.div7 {
-	position: block;
-   width: 60%; 
-   height: auto;
-    text-align: right;
-    color: #fff;
-    padding-top: 200px;
-    padding-bottom: 0px;
-	margin: 0px 0px -260px 290px;   
-	
-}
-
-.submenu {
-     position: absolute;
-    top: 300px;
-    right: 210px;
-    width: 600px;
-    height: 40px;
-    color: #fff;
-    margin: 0;
-   
     
 }
-
-.submenu:hover { 
-	color: #e6ac00;
-}
-
-
+	
 
 body {font-family: Verdana, Arial, sans-serif;
 background-color: #262626;
@@ -241,33 +235,23 @@ h1 { color: #e2c810; visibility: hidden}
     margin: 20px}
 	
 	h3 {color: #e9dfaf;}
-	h4 {color: white;
-  text-align: center;
-  font-style: italic;
+	h4 {color: #efe7c3;}
+
+header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
+ color: #003300;
+ padding-top: 20px;
+ 
 
 }
-
-
-.header { 
-	width: 100%;
-	height: 55%;
-	background: -webkit-linear-gradient(left, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1));
- 	color: #003300;
-	 padding-top: 10px;	
-}
-
 
 .logo {
-	background-image: url(colisium.png);
+	background-image: url(coliseum.png);
 	background-repeat: no-repeat;
 	padding-top: -20px;
    	padding-right: 132px;
     padding-bottom: 230px;
    	padding-left: 125px;
-   margin: -38px -6px -6px -6px; 
+   margin: -8px 6px 6px 6px; 
    	border-style: none;
    		position: fixed;
    		z-index: 9999;
@@ -276,7 +260,7 @@ h1 { color: #e2c810; visibility: hidden}
 
 nav { 
  	float: left; width: 20% auto; font-weight: 120%; letter-spacing: 0.1em;
-	text-align: left; background-color: #404040 ; margin: -146px 10px 10px 10px;  
+	text-align: left; background-color: #404040 ; margin: -130px 10px 10px 22px;  
 	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 6px 6px 2px 2px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
  	padding-top: 20px;
  	border-bottom: none;
@@ -318,7 +302,7 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
  	font-size: 65%;
  	font-style: italic;
  	color: #003300;
-	 padding: 8%;
+	 padding: 8.5%;
 	clear: both; 
 	background-color: rgba(248, 235, 221, 0.03); 
 	width: 90%;
@@ -337,14 +321,9 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
      .indent-1 section a:hover{text-decoration: none; color: #cc9966; }
 
 
-iframe {
-	box-shadow: 5px 10px 5px;
-}
-
 
 /* for desktop */
-@media only screen and  (max-width: 1082px)
-{
+@media only screen and  (max-width: 1082px){
 
 .MyDropMenu {
 display: block;
@@ -355,8 +334,6 @@ display: block;
 
 
 }
-
-
 
 /*drop down menu button*/
 
@@ -431,28 +408,39 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    height: auto;
 }
 
+.div6 {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 150%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px;
+}
+
+.div6 img {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 150%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px 22px 18px 19px;
+}
 
         
 #content { 
-		width: 94%;
+		width: 60%;
         margin-left: 5%; 
                      
 }
-
+aside { 
+		
+		width: 30%;  
+}
             
-section {
-  float: left;
-  margin: 0;
-  width: 62%;
-  
-}
-
-aside {
-  float: right;
-  margin: 0;
-  width: 30%;
-  
-}
             
 
 nav { float: none; display: none;
@@ -466,7 +454,7 @@ nav li { display: inline;
          margin: 0 2%; 
 		 }
 
-}
+footer{width: 150%;}
 
 /* for tablet */
 @media only screen and (max-width: 768px) 
@@ -504,23 +492,11 @@ nav { float: none; display: none;
  width: auto;
   margin-top: 0;	text-align: center;	  }
           
-#content { width: 90%;
+#content { width: 60%;
                      margin-left: 5%; }
-                     
-section {
-  float: left;
-  margin: 0;
-  width: 40%;
-  
-}
-
            
-aside {
-  float: right;
-  margin: 5px;
-  width: 25%;
-  
-}
+aside { width: 30%;  
+            }
            
 nav ul { padding-left: 0;
                 }
@@ -528,13 +504,12 @@ nav ul { padding-left: 0;
 nav li { display: inline;
          margin: 0 2%; 
 		 }
-
 }
+
 
 /* for mobile */
 @media only screen and (max-width: 480px) {            
-            
-                 
+
 iframe, object, embed {
     max-width: 100%;
 
@@ -563,18 +538,38 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    width: 25%;
    height: auto;
 }
-            
+
+.div6 {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 100%;
+    height: 200%;
+    border: 5px solide red;
+	margin: 0px;
+}
+
+.div6 img {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 100%;
+    height: 200%;
+    border: 5px solide red;
+	margin: 0px 22px 18px 19px;
+}
+
+          
 #wrapper { width: auto; }
 		    h1 { margin-bottom: 0; }
 			
 #content { margin: 0 5%;      
-                       width: auto;	}
-
-
-
+            width: auto;	}
 
   
-nav { width: auto;	display: none;  }
+nav { width: auto;	  }
 			
 nav ul { padding-left: 0; 
 			         text-align: center;}
@@ -588,12 +583,14 @@ nav li {display: block;
 					margin: 1%;
 					padding: 2.5%; }
 			
-
- }
-
+footer { 
+width: 100% ;
+}
+ 
+ 
+ /* for mobile */
 @media only screen and (max-width: 375px) {            
-            
-                 
+
 iframe, object, embed {
     max-width: 100%;
 
@@ -622,6 +619,30 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    width: 25%;
    height: auto;
 }
+
+.div6 {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 150%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px;
+}
+
+.div6 img {
+	 
+	position: relative;
+    top: 0px;
+    right: -20px;
+    width: 150%;
+    height: 100%;
+    border: 5px solide red;
+	margin: 0px 22px 18px 19px;
+}
+
+
             
 #wrapper { width: auto; }
 		    h1 { margin-bottom: 0; }
@@ -647,9 +668,12 @@ nav li {display: block;
 					margin: 1%;
 					padding: 2.5%; }
 			
+footer { 
+width: 100% ;
+}
 
-header, hgroup, nav, footer, figure, figcaption { display: block; }
 
+header, hgroup, nav, footer, figure, figcaption { display: block;}
 
 </style>
 
@@ -660,8 +684,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div id="wrapper">
 <a class="logo" href="" ></a>
 
-
-<div class="header">
+<header>
 
 <div class="MyDropMenu">
 <div class="dropdown">
@@ -680,7 +703,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 
 <div class="div1">
-<img src="average.png" alt="" width="300" height="200">
+<img src="averageJoe.png" alt="" width="300" height="200">
 </div>
 	
 <div class="div4">
@@ -690,7 +713,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>	
 <div class="div5Link">
 <a href=""> Logout</a><br><br>
-<a href="#"> maximizexcellence.com</a>
+<a href="#"> maximumexcellence.com</a>
 </div>
 	
 
@@ -720,50 +743,30 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 </div>
 
+
 </div>
-
-
-
+</header>
+ 
 <nav>
-
 <ul>
-<b><a href="index.html">INDUCTIONS</a></b> 
+<b><a href="index.html">INDUCTION</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
-<b> <a href="colisium.html">COLISIUM</a></b>
+<b> <a href="colisium.html">COLISEUM</a></b>
 <b> <a href="crusade.html">CRUSADES</a></b>
 <b> <a href="https://www.facebook.com/groups/227937110985747/?ref=bookmarks">COMMUNITY</a></b>
-<b> <a href="maximumu.html">MAXIMUM U</a></b>
+<b> <a href="maximumu.html">MAXIMIZE U</a></b>
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
 
 <div id="content">
-	
-
-<div class="group">
-  <section class="section">
-	 <h3>Welcome to the Colisium</h3><br>
-	 	<iframe width="500" height="300" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br> 
-</section>
-<aside>
-<h3>Get Start it</h3>
-<p>paragraph goes here!</p>
-
-<h3>Get Start it</h3>
-<p>paragraph goes here!</p>
-
-<h3>Get Start it</h3>
-<p>paragraph goes here!</p>
-</aside>
-</div>
-	
+<div id="container">
+	 <div class="div6">
+	 <img src="Arena.png" alt="">
+	 </div>
 
 
-
-<br><br><br><br>
   
-
-
 <div id="footer">
 
 <section class="indent-1">
@@ -775,7 +778,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
     </section>
 
     <!-- Section 2 -->
-     <section>
+    <section>
         <div><b>MAXIMIZE EXCELLENCE</b></div><br>
         <div><a href="#" color="white">Earnings Excellence</a></div>
         <div><a href="#" color="white">Terms of use</a></div>
@@ -788,8 +791,8 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
   </div>
 </div>
-<script>	
-	
+
+<script>
 function move() {
   var elem = document.getElementById("myBar");   
   var width = 0;
@@ -823,19 +826,10 @@ function checkform()
     }
       
     }
-	
 
-/* toggle button */	
-function toggleClass(el){
-	if(el.className == "class1"){
-		el.className = "class2";
-	} else {
-		el.className = "class1";
-	}
-}
-	
-	
-	
+
+
+
 </script>
 </body>
 
