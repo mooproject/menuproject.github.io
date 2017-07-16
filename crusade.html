@@ -10,6 +10,100 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 
+#Rowbutton {
+  margin: 5em 0 5em 0;
+  padding: 0.75em 1.1em 0.75em 1.1em;
+  font-weight: 400;
+  color: #444444;
+  background-color: transparent;
+  border: none;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.slidedown {
+  -webkit-transform: scaleY(0);
+       -o-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  
+  -webkit-transform-origin: top;
+       -o-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  
+  -webkit-transition: -webkit-transform 0.2s ease;
+            -o-transition: -o-transform 0.2s ease;
+          -ms-transition: -ms-transform 0.2s ease;
+                  transition: transform 0.2s ease;
+}
+
+.slidedown.active {
+  -webkit-transform: scaleY(1);
+       -o-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+
+
+.txt-center {
+  text-align:center;
+}
+
+
+
+/* ------------------------
+2. Grid
+https://css-tricks.com/dont-overthink-it-grids/
+------------------------ */
+.row {
+  width:100%;
+  max-width:80em;
+  margin:0 auto 0 auto;
+}
+
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.row .row {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+
+[class*='col-'] {
+  float:left;
+  padding:0 0.75em 0 0.75em;
+}
+
+
+.col-1-2 { width:50%; }
+.col-2-2 { width:100%; }
+.col-1-3 { width:33.33%; }
+.col-2-3 { width:66.66%; }
+.col-3-3 { width:100%; }
+.col-1-4 { width:25%; }
+.col-2-4 { width:50%; }
+.col-3-4 { width:75%; }
+.col-4-4 { width:100%; }
+.col-1-5 { width:20%; }
+.col-2-5 { width:40%; }
+.col-3-5 { width:60%; }
+.col-4-5 { width:80%; }
+.col-5-5 { width:100%; }
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .top img {width: 100%; }
 
 .box {
@@ -134,8 +228,7 @@
 }
 
 #mymenu, 
-#mytoggle-menu {  width: 80%; 
-  background-color: #E5A200;
+#mytoggle-menu {  width: 90%; 
 
 }
 
@@ -213,26 +306,23 @@ aside {
   
 }
 
-.button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 23px;  margin-top: 30px;}
+.button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 30px; margin-top: -10px;}
 
 .button1:hover {
     background-color: #00e600;
 }	
 
-
 .btn-group .botmenu {
     background-color: transparent; 
-   
     color: white;
     padding: 10px;
- float: left;
- margin-top: 44px;
- margin-bottom: 10px;
- margin-right: -3px;
+    padding-right: -10px;
+    float: left;
+   margin-right: -5px;
     text-align: block;
     text-decoration: none;
     display: inline-block;
-    font-size: 8px;
+    font-size: 10px;
     cursor: pointer; 
     font-weight: bold;
     
@@ -242,6 +332,7 @@ aside {
 }
 .btn-group .botmenu:hover {
     background-color: #e6ac00;
+    font-size: 11.3px;
 }	
 
 .submenu {
@@ -384,57 +475,50 @@ img {
     
 }
 
-
-.div6 img {
-	 
-	position: relative;
-    top: -210px;
-    right: -20px;
-    width: 900px;
-    height: 550px;
-    border: 5px solide red;
-
-}
-
 .div1 {
    width: 100%;
-    height: 70px;  
+    height: 120px;  
    background-color: #515050;
     text-align: right;
     color: #fff;
     padding-top: 50px;
 	margin: -20px 0px;
-   box-shadow: 0px 10px 18px 0px  black;   
+   box-shadow: 0px 10px 18px 0px  black;
 }
-
 
 .div2 a{
      position: absolute;
-    top: 180px;
+    top: 120px;
     right: 0px;
-    width: 340px;
-    height: 300px;
-
-  
+    width: 260px;
+    height: 210px;
 }
 
-.div3 {
+
+
+#myVault img{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 260px;
+    height: 100% ;
+   
+}
+
+.div3 img{
      position: absolute;
-    top: 190px;
-    right: 400px;
-    width: 500px;
-    height: 50px;
+    top: 170px;
+    right: 340px;
+    width: 580px;
+    height: 120px;
     color: #fff;
-  
-    
 }
-
 
 .div4 {
      position: absolute;
-    top: 75px;
-    right: 70px;
-    width: 136px;
+    top: 45px;
+    right: 74px;
+    width: 	140px;
     height: 80px;
     color: #fff;    
 }
@@ -461,20 +545,16 @@ img {
     color: #e6ac00; 
 }
 
-
-
 .div7 {
+	position: block;
    width: 60%; 
-   height: 83px;
+   height: auto;
     text-align: right;
     color: #fff;
-    padding-top: 20px;
-	margin: 0px 0px -4px 280px;   
-}
-
-
-.div7:hover { 
-	color: #e6ac00;
+    padding-top: 200px;
+    padding-bottom: 0px;
+	margin: 0px 0px -260px 290px;   
+	
 }
 
 
@@ -503,14 +583,15 @@ h1 { color: #e2c810; visibility: hidden}
 	h3 {color: #e9dfaf;}
 	
 
-.header { background-color: #2874A6;
- color: #003300;
- padding-top: 20px;
- background-image: url(vault.png);
- background-size: 360px 390px ;
- background-attachment: fixed;
-    background-position: right; 
-    background-repeat: no-repeat;
+.header { 
+	width: 100%;
+	height: 55%;
+	background: -webkit-linear-gradient(left, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1));
+ 	color: #003300;
+	 padding-top: 10px;	
 }
 
 
@@ -565,13 +646,31 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 
 }
 
-footer { text-align: center;
- font-size: 80%;
- font-style: italic;
- color: #003300;
- padding: 2.5%;
-clear: both; background-color: #ffffff; 
+#footer { 
+	 background: url(footerImg.png) no-repeat;
+	background-size: 890px;
+	text-align: left;
+ 	font-size: 65%;
+ 	font-style: italic;
+ 	color: #003300;
+	 padding: 10%;
+	clear: both; 
+	background-color: rgba(248, 235, 221, 0.03); 
+	width: 108%;
+	height: 30px;
+	float: left;
 }
+
+
+#footer div{ margin: 2px; padding-left: -10px; }
+
+
+
+.indent-1 {float: left; }
+    .indent-1 section {width: 50%; float: left; color: white;}
+     .indent-1 section a{text-decoration: none; color: white; }
+     .indent-1 section a:hover{text-decoration: none; color: #cc9966; }
+
 
 
 /* for desktop */
@@ -966,7 +1065,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 
 <div class="div1">
-<img src="averageJoe.png" alt="" width="300" height="200">
+<img src="average.png" alt="" width="300" height="200">
 </div>
 	
 <div class="div4">
@@ -976,17 +1075,11 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>	
 <div class="div5Link">
 <a href=""> Logout</a><br><br>
-<a href="#"> maximumexcellence.com</a>
+<a href="#"> maximizexcellence.com</a>
 </div>
 	
-	
-<h1>Welcome</h1>
-<div class="div3">
-<img src="saving.png" alt="" width="800" height="400">
-</div>
 
-
- <div class="div7">
+  <div class="div7">
   <div class="group">
 <div class="btn-group">
   <a href="start.html" ><button class="button1 " ><font style="font-size: 1.8em; color: #ffffff; " >START HERE</font></button></a>
@@ -997,16 +1090,20 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <br><br>
 </div>
 </div>
+
+<h1>Welcome</h1>
+<div class="div3">
+<img src="saving.png" alt="" width="460" height="400">
 </div>
-	
+
+
+
 <div class="div2">
-	  <a href="vault.html">
-	  
-</a>
+<a href="vault.html">
+<div id="myVault">
+<img src="vault.png" ></a>
 </div>
-
 </div>
-
 
 </div>
 
@@ -1069,60 +1166,65 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div></div>
 
 <br><br><br><br><br><br><br>
-
-
-  <div class="box">
-    <div class="top">
-     
-   <img src="https://cdn.pbrd.co/images/7FmmoUGW.png">
-   <div class="bottom">
-       <img src="https://cdn.pbrd.co/images/1f1Gh5hSW.png">
-    </div>
-   
-  </div> </div>
- 
-
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-
-
-
-
-<div id="mymenu">
-  <label for="tk" id="mytoggle-menu">What am I going to learn if i join the colisium? <span class="drop-icon">&#9776;</span></label>
-  <input type="checkbox" id="tk">
-  <ul class="mymain-menu clearfix">
-    <section>
-    <img src="Arena.png" width="330" height="350">
-    </section>
-    <aside>
-<p><b>Get Start it</b></p>
-<p>paragraph goes here!</p><br><br>
+	
+<div class="row">
+  <div class="col-2-2 txt-center">
+    <div id="Rowbutton" class="js-toggle">
+      <img src="https://cdn.pbrd.co/images/7FmmoUGW.png">
+    </div>    
+  </div>
+  <div class="col-1-2">
+    <div class="slidedown"><br><br>
+      <img src="RecruitWeapon.png" width="350" >
+    </div>    
+  </div>
+  <div class="col-1-2">
+    <div class="slidedown">
+       <br>
+<p>paragraph goes here!</p><br>
 <div class="class1" onclick="toggleClass(this)">
       <h4>Mark as completed</h4>
     </div>
 </aside>
-  </ul>
-</div><br>
-
-	
+    </div>
+  </div>
+</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-<footer>Copyright &copy; Maximize 2017</footer>
+<div id="footer">
+
+<section class="indent-1">
+    <!-- Section 1 --> 
+    <section>
+        <div><b>MAXIMIZE EXCELLENCE</b></div><br>
+        <div><a href="www.maximizexellence.com" color="white">www.maximizexellence.com</a></div>
+        <div>&copy; Copyright Maximize Excellence 2017</div>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <div><b>MAXIMIZE EXCELLENCE</b></div><br>
+        <div><a href="#" color="white">Earnings Excellence</a></div>
+        <div><a href="#" color="white">Terms of use</a></div>
+        <div><a href="#" color="white">Privacy Policy</a></div>
+    </section>
+</section> 
 </div>
+
+
 </div>
+  </div>
 </div>
+
 <script>
+$('.js-toggle').click( function() {
+  $('.slidedown').toggleClass('active');
+});
+
+
 function move() {
   var elem = document.getElementById("myBar");   
   var width = 0;
@@ -1171,7 +1273,7 @@ function toggleClass(el){
 /* toggle box */
 $('.top').on('click', function() {
 	$parent_box = $(this).closest('.box');
-	$parent_box.siblings().find('.bottom').slideUp();
+	
 	$parent_box.find('.bottom').slideToggle(1000, 'swing');
 });
 

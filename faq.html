@@ -9,6 +9,35 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+.button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 30px; margin-top: -10px;}
+
+.button1:hover {
+    background-color: #00e600;
+}	
+
+.btn-group .botmenu {
+    background-color: transparent; 
+    color: white;
+    padding: 10px;
+    padding-right: -10px;
+    float: left;
+   margin-right: -5px;
+    text-align: block;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer; 
+    font-weight: bold;
+    
+}
+.btn-group .botmenu:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .botmenu:hover {
+    background-color: #e6ac00;
+    font-size: 11.3px;
+}
+
 
 .MyDropMenu {
 		display: none;
@@ -322,20 +351,6 @@ img {
 
    float: right;
 	margin: -30px 12px;
-    
-}
-
-
-
-.div6 img {
-	 
-	position: relative;
-    top: -210px;
-    right: -20px;
-    width: 900px;
-    height: 550px;
-    border: 5px solide red;
-
 }
 
 .div1 {
@@ -347,46 +362,77 @@ img {
     padding-top: 50px;
 	margin: -20px 0px;
    box-shadow: 0px 10px 18px 0px  black;
-  
+}
+
+.div2 a{
+     position: absolute;
+    top: 120px;
+    right: 0px;
+    width: 260px;
+    height: 210px;
+}
+
+
+
+#myVault img{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 260px;
+    height: 100% ;
    
-    
 }
 
-
-.div2 {
+.div3 img{
      position: absolute;
-    top: 190px;
-    right: 40px;
-    width: 200px;
-    height: 80px;
-    border: 3px ;
-}
-
-.div3 {
-     position: absolute;
-    top: 210px;
-    right: 300px;
-    width: 600px;
-    height: 400px;
+    top: 170px;
+    right: 340px;
+    width: 580px;
+    height: 120px;
     color: #fff;
-    
 }
 
 .div4 {
      position: absolute;
-    top: 75px;
-    right: 70px;
-    width: 136px;
+    top: 45px;
+    right: 74px;
+    width: 	140px;
     height: 80px;
     color: #fff;    
 }
 
-.div5 {
+.div5Link {
      position: absolute;
     top: 50px;
     right: 340px;
+    text-align: right; 
+    color: white;
+}
+
+.div5Link  a:link {
     color: #fff;
-    
+    text-decoration: none;
+}
+
+.div5Link a:visited {
+    color: white;
+} 
+
+/* mouse over link */
+.div5Link a:hover {
+    color: #e6ac00; 
+}
+
+.div7 {
+	position: block;
+   width: 60%; 
+   height: 65px;
+    text-align: right;
+    color: #fff;
+    padding-top: 200px;
+    padding-bottom: 0px;
+	margin: 0px 0px -260px 290px;   
+	
 }
 	
 
@@ -414,11 +460,15 @@ h1 { color: #e2c810; visibility: hidden}
 	h3 {color: #e9dfaf;}
 	h4 {color: #efe7c3;}
 
-header { background: linear-gradient(to bottom right, #99ccff 0%, #0033cc 100%);
- color: #003300;
- padding-top: 20px;
- 
-
+.header { 
+	width: 100%;
+	height: 55%;
+	background: -webkit-linear-gradient(left, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1));
+ 	color: #003300;
+	 padding-top: 10px;	
 }
 
 .logo {
@@ -472,14 +522,30 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 
 }
 
-footer { text-align: center;
- font-size: 80%;
- font-style: italic;
- color: #003300;
- padding: 2.5%;
-clear: both; background-color: #ffffff; 
+#footer { 
+	 background: url(footerImg.png) no-repeat;
+	background-size: 890px;
+	text-align: left;
+ 	font-size: 65%;
+ 	font-style: italic;
+ 	color: #003300;
+	 padding: 8.5%;
+	clear: both; 
+	background-color: rgba(248, 235, 221, 0.03); 
+	width: 90%;
+	height: 30px;
+	float: left;
 }
 
+
+#footer div{ margin: 2px; padding-left: -10px; }
+
+
+
+.indent-1 {float: left; }
+    .indent-1 section {width: 50%; float: left; color: white;}
+     .indent-1 section a{text-decoration: none; color: white; }
+     .indent-1 section a:hover{text-decoration: none; color: #cc9966; }
 
 
 /* for desktop */
@@ -785,7 +851,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div id="wrapper">
 <a class="logo" href="" ></a>
 
-<header>
+<div class="header">
 
 <div class="MyDropMenu">
 <div class="dropdown">
@@ -804,7 +870,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 
 <div class="div1">
-<img src="averageJoe.png" alt="" width="300" height="200">
+<img src="average.png" alt="" width="300" height="200">
 </div>
 	
 <div class="div4">
@@ -812,18 +878,38 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
   <div id="myBar">0%</div>
 </div>
 </div>	
-<div class="div5">
-<a href=""> Logout</a>
+<div class="div5Link">
+<a href=""> Logout</a><br><br>
+<a href="#"> maximizexcellence.com</a>
 </div>
 	
-<h1>WELCOME</h1>
+
+  <div class="div7">
+  <div class="group">
+<div class="btn-group">
+  <a href="start.html" ><button class="button1 " ><font style="font-size: 1.8em; color: #ffffff; " >START HERE</font></button></a>
+  <a href="#" ><label class="botmenu" >MENTAL EXCELLENCE</label></a>
+  <a href="#" ><label class="botmenu" >PHYSICAL EXCELLENCE</label></a>
+  <a href="#" ><label class="botmenu" >FINANCIAL EXCELLENCE</label></a>
+  </div>
+<br><br>
+</div>
+</div>
+
+<h1>Welcome</h1>
 <div class="div3">
-<img src="savingline.png" alt="" width="2200" height="900">
+<img src="saving.png" alt="" width="460" height="400">
 </div>
+
+
+
 <div class="div2">
-<img src="retirement.png" alt="" width="400" height="300">
+<a href="vault.html">
+<div id="myVault">
+<img src="vault.png" ></a>
 </div>
-</header> 
+</div>
+</div>  
 
 
 <nav>
@@ -858,13 +944,37 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
   </ul>
 </div><br><br><br>
 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div id="footer">
+
+<section class="indent-1">
+    <!-- Section 1 --> 
+    <section>
+        <div><b>MAXIMIZE EXCELLENCE</b></div><br>
+        <div><a href="www.maximizexellence.com" color="white">www.maximizexellence.com</a></div>
+        <div>&copy; Copyright Maximize Excellence 2017</div>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <div><b>MAXIMIZE EXCELLENCE</b></div><br>
+        <div><a href="#" color="white">Earnings Excellence</a></div>
+        <div><a href="#" color="white">Terms of use</a></div>
+        <div><a href="#" color="white">Privacy Policy</a></div>
+    </section>
+</section> 
 </div>
 
-  
 
-
-<footer>Copyright &copy; Maximize 2017</footer>
 </div>
+  </div>
+</div>
+
 <script>
 function move() {
   var elem = document.getElementById("myBar");   

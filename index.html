@@ -9,11 +9,6 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
-#copy {padding: 10px; margin-right: -45px;}
-
-#copy img{width: 130px; height: 120px;}
-
-
 
 .image-upload > input
 {
@@ -97,13 +92,11 @@ section {
 
 .btn-group .botmenu {
     background-color: transparent; 
-   
     color: white;
     padding: 10px;
-    padding-right: -14px;
- float: left;
- 
-   margin-right: 6px;
+    padding-right: -10px;
+    float: left;
+   margin-right: -5px;
     text-align: block;
     text-decoration: none;
     display: inline-block;
@@ -117,6 +110,7 @@ section {
 }
 .btn-group .botmenu:hover {
     background-color: #e6ac00;
+    font-size: 11.3px;
 }	
 	
 	
@@ -172,8 +166,8 @@ section {
 
 #contact {
 	background-color: rgba(248, 235, 221, 0.03);
-	padding:25px;
-	margin:-30px 0;
+	padding:15px;
+	margin:10px 0;
 	border-radius: 5px;
 }
 
@@ -309,7 +303,7 @@ img {
      position: absolute;
     top: 120px;
     right: 0px;
-    width: 240px;
+    width: 260px;
     height: 210px;
 }
 
@@ -319,23 +313,23 @@ img {
     position: absolute;
     top: 40px;
     right: 0px;
-    width: 230px;
+    width: 260px;
     height: 100% ;
    
 }
 
-.div3 {
+.div3 img{
      position: absolute;
     top: 170px;
-    right: 380px;
-    width: 500px;
-    height: 50px;
+    right: 340px;
+    width: 580px;
+    height: 120px;
     color: #fff;
 }
 
 .div4 {
      position: absolute;
-    top: 75px;
+    top: 45px;
     right: 74px;
     width: 	140px;
     height: 80px;
@@ -411,7 +405,10 @@ h1 { color: #e2c810; visibility: hidden}
 .header { 
 	width: 100%;
 	height: 55%;
-	background-color: #2874A6;
+	background: -webkit-linear-gradient(left, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1));
  	color: #003300;
 	 padding-top: 10px;
 	
@@ -469,24 +466,30 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 
 }
 
-footer { 
-	display: fixed;
-	text-align: center;
- 	font-size: 80%;
+#footer { 
+	 background: url(footerImg.png) no-repeat;
+	background-size: 890px;
+	text-align: left;
+ 	font-size: 65%;
  	font-style: italic;
  	color: #003300;
-	 padding: 2.5%;
+	 padding: 8.5%;
 	clear: both; 
 	background-color: rgba(248, 235, 221, 0.03); 
-	width: 95%;
-	height: 80px;
-
+	width: 90%;
+	height: 30px;
+	float: left;
 }
 
+
+#footer div{ margin: 2px; padding-left: -10px; }
+
+
+
 .indent-1 {float: left; }
-    .indent-1 section {width: 50%; float: left; color: white; }
+    .indent-1 section {width: 50%; float: left; color: white;}
      .indent-1 section a{text-decoration: none; color: white; }
-     .indent-1 section a:hover{text-decoration: none; color: green; }
+     .indent-1 section a:hover{text-decoration: none; color: #cc9966; }
 
 
 
@@ -498,7 +501,7 @@ iframe {
 
 
 /* for desktop screen 1080 */
-@media only screen and  (max-width: 1175px)
+@media only screen and  (max-width: 1195px)
 {
 
 
@@ -957,7 +960,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>	
 <div class="div5Link">
 <a href=""> Logout</a><br><br>
-<a href="#"> maximumexcellence.com</a>
+<a href="#"> maximizexcellence.com</a>
 </div>
 	
 
@@ -1044,28 +1047,29 @@ this.style.backgroundColor = '#7ca503'">
 <br><br><br><br><br><br><br><br>
 <br><br><br><br>
 <br><br><br><br>
-<footer>
+
+
+<div id="footer">
 
 <section class="indent-1">
     <!-- Section 1 --> 
     <section>
         <div><b>MAXIMIZE EXCELLENCE</b></div><br>
         <div><a href="www.maximizexellence.com" color="white">www.maximizexellence.com</a></div>
-        <div>	&copy; Copyright Maximize Excellence 2017</div>
+        <div>&copy; Copyright Maximize Excellence 2017</div>
     </section>
 
     <!-- Section 2 -->
     <section>
         <div><b>MAXIMIZE EXCELLENCE</b></div><br>
-        <div><a href="www.maximizexellence.com" color="white">Earnings Excellence</a></div>
-        <div><a href="www.maximizexellence.com" color="white">Terms of use</a></div>
-        <div><a href="www.maximizexellence.com" color="white">Privacy Policy</a></div>
+        <div><a href="#" color="white">Earnings Excellence</a></div>
+        <div><a href="#" color="white">Terms of use</a></div>
+        <div><a href="#" color="white">Privacy Policy</a></div>
     </section>
-</section>  
-<div id="copy"><img src="ColiseumFooter.png" width="130" height="100"></div>
+</section> 
+</div>
 
 
-</footer>
 </div>
   </div>
 </div>
