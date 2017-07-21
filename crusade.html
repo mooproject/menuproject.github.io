@@ -9,6 +9,18 @@
 <link rel="stylesheet" href="css.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
+.bank_saving  {
+    border-radius: 2px;
+    padding: 0 38px;
+   background:#09C;
+   cursor: pointer;
+}
+
+.bank_saving:hover  {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background:#0C0;
+}
+
 #main {
 margin: 80px 122px;
 padding: 10px;
@@ -194,14 +206,10 @@ https://css-tricks.com/dont-overthink-it-grids/
 
 .bottom img {width: 100%; margin: 20px 2px 0px 10px; }
 
-
-
-
 .class1{ float:left; margin:0px; background:#09C; width:80%; cursor:pointer; }
 .class2{ float:left; margin:10px; background:#0C0; width:80%; height:20%;  cursor:pointer; }
 
-
-
+.class_img {float:left; margin:10px; background: url(ColiseumFooter.png) no-repeat; width:80%; height:20%;  cursor:pointer;}
 
 
 .MyDropMenu {
@@ -1292,9 +1300,8 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
     <p>To complete this challenge...</p>
    
     </div>
-<div id="second"><p><b>wer<b></p>  
-   <div class="class1" onclick="toggleClass(this)">
-      <h4>Saving</h4></div>
+<div id="second"><img class="show" src="money.png" width="100px" height="100px" /><br><br><br><br> 
+   <button class="bank_saving"><p><h4>BANK SAVINGS!</h4></p></button>
 </div>
     
 
@@ -1379,6 +1386,13 @@ function toggleClass(el){
 		el.className = "class1";
 	}
 }
+
+/* show img */
+var $show = $('.show').hide();
+$('button').on('click', function() {
+  $show.fadeToggle();
+});
+
 
 /* toggle box */
 $('.top').on('click', function() {
