@@ -338,7 +338,7 @@ img {
 
 .div5Link {
      position: absolute;
-    top: 50px;
+    top: 40px;
     right: 340px;
     text-align: right; 
     color: white;
@@ -522,10 +522,14 @@ display: block;
 .dropbtn {
     background-color: #cc9944;
     color: white;
-    padding: 14px 18px;
+    padding: 16px;
     font-size: 20px;
     border: none;
     cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #cc9966;
 }
 
 .dropdown {
@@ -536,7 +540,7 @@ display: block;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #404040;
+     background-color: #404040;
     min-width: 200px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -552,14 +556,11 @@ display: block;
 }
 
 .dropdown a:hover {background-color: #fff; color: #e2c810;}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
-.dropdown:hover .dropbtn {
-    background-color: #cc9966;
-}
-/* End drop down menu */
+.show {display:block;}
+
+/* end down menu button */
+
 
 
 
@@ -865,7 +866,7 @@ nav li {display: block;
             
                 
 iframe, object, embed {
-    max-width: 20%;
+    max-width: 100%;
 
 }
 
@@ -1119,6 +1120,28 @@ function PreviewImage() {
         document.getElementById("uploadPreview").src = oFREvent.target.result;
     };
 };
+
+
+/*script for menu dropdown button*/
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+}
+
 
 </script>
 </body>
