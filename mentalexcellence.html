@@ -10,80 +10,6 @@
 
 <style>
 
-.image-upload > input
-{
-    display: none;
-   cursor: pointer;
-}
-
-.image-upload img
-{
-    width: 100px;
-    cursor: pointer;
-}
-
- 
-.upload {
-	position: absolute;
-    top: 55px;
-    right: 110px;
-    height:101px;
-  width:101px;
-  border: 3px solid red;
-
-}
-
-#uploadPreview{
-  height:100px;
-  width:100px;
-   border-radius: 0px;
-   float: left;
-}
-
-#uploadImage{
-  width:500px;
-  float:left;
-}
-
-
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
-
-
-
-.MyDropMenu {
-		display: none;
-}
-
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: none;
-  *zoom: 1;
-}
-section {
-  float: left;
-  margin: 0;
-  width: 62%;
-  
-}
-
 .button1{ display: inline-block; padding: 12px 12px 12px 12px; background-color: #00cc44;  float: left; cursor: pointer; margin-bottom: 20px; margin-right: 30px; margin-top: -10px;}
 
 .button1:hover {
@@ -112,23 +38,37 @@ section {
     background-color: #e6ac00;
     font-size: 11.3px;
 }	
-	
-	
-	
-	
 
-
-.wrapper {
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 290px;
-    top: 50%;
-    left: 85%;
-    margin-top: -330px;
-    margin-left: -145px;
+.MyDropMenu {
+		display: none;
 }
-	
+
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: none;
+  *zoom: 1;
+}
+.section {
+ 
+  margin: 0;
+  width: 62%;
+  padding-left: 12px;
+}
+aside {
+ position: absolute;
+    top: 520px;
+    right: 0px;
+    width: 280px;
+    height: 210px;
+}	
 	
 	
 #myProgress {
@@ -159,122 +99,11 @@ section {
 	width:100%;
 	margin:-140px 80px;
 	position:relative;
-}
-
 	
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-
-#contact {
-	background-color: rgba(248, 235, 221, 0.03);
-	padding:15px;
-	margin:10px 0;
-	border-radius: 5px;
-}
-
-#contact h3 {
-	color: #F96;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
-}
-
-
-
-#contact input[type="text"], #contact input[type="email"],  #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:92%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	border-radius: 5px;
-}
-
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
-
-#contact textarea {
-	height:100px;
-	max-width:100%;
-  resize:none;
-}
-
-#contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
-}
-
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
-
-input[type=submit] {
-   
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    
-     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=file] {
-   background-color: #cc9900;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-	
+}	
 
 .wrap {
-  width: 100%;
+  width:800px;
   margin:0 auto;
   text-align:left;
   color:#989A8F;
@@ -305,7 +134,6 @@ img {
     right: 0px;
     width: 260px;
     height: 210px;
-    
 }
 
 
@@ -316,16 +144,7 @@ img {
     right: 0px;
     width: 260px;
     height: 100% ;
-     -webkit-filter: blur(2px);
- -o-filter: blur(2px);
- -ms-filter: blur(2px);
-}
-
-#myVault img:hover{
- -webkit-filter: blur(0px);
- -o-filter: blur(0px);
- -ms-filter: blur(0px);
-
+   
 }
 
 .div3 img{
@@ -348,7 +167,7 @@ img {
 
 .div5Link {
      position: absolute;
-    top: 40px;
+    top: 50px;
     right: 340px;
     text-align: right; 
     color: white;
@@ -368,7 +187,6 @@ img {
     color: #e6ac00; 
 }
 
-
 .div7 {
 	position: block;
    width: 60%; 
@@ -381,21 +199,33 @@ img {
 	
 }
 
-
-
-body {
-	font-family: Verdana, Arial, sans-serif;
-	background-color: #262626;
-	z-index: 99;
+.submenu {
+     position: absolute;
+    top: 300px;
+    right: 210px;
+    width: 600px;
+    height: 40px;
+    color: #fff;
+    margin: 0;
+   
+    
 }
 
+.submenu:hover { 
+	color: #e6ac00;
+}
+
+
+
+body {font-family: Verdana, Arial, sans-serif;
+background-color: #262626;
+z-index: 99;
+}
 p {
-	color: #fff;
+color: #fff;
 }
-
-wrapper {  
-			background-color: #F4E8BC; 
-	        width: 100%;
+wrapper {  background-color: #F4E8BC; 
+	        width: 90%;
 			margin: auto;
             color: #330000;
 }
@@ -406,20 +236,19 @@ h1 { color: #e2c810; visibility: hidden}
  h2 { 
  	background-image: url(Banner.png);
  	background-repeat: no-repeat;
- 	background-size: 800px 140px;
- 	color: #cc9966; 
+ 	background-size: 710px 120px;
+ 	color: #e2c810; 
  	text-align: center;  
  	font-weight: bold; 
- 	font-size: 30px;
- 	width: 100%;
- 	height: 60px;
-    padding: 50px 20px ;
-    margin-top: -35px;
-
+ 	width: 710px;
+ 	height: 40px;
+    padding: 40px 20px ;
+    margin: 20px
 }
-	
-	h3 {color: #e9dfaf;}
-	h4 {color: #efe7c3;}
+
+h3 {
+	color: #fff;
+}
 
 .header { 
 	width: 100%;
@@ -429,14 +258,11 @@ h1 { color: #e2c810; visibility: hidden}
     background: -moz-linear-gradient(right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, rgba(40, 116, 166, 1), rgba(0, 3, 5, 1));
  	color: #003300;
-	 padding-top: 10px;
-	
+	 padding-top: 10px;	
 }
 
-
-
 .logo {
-	background-image: url(logo.png);
+	background-image: url(coliseum.png);
 	background-repeat: no-repeat;
 	padding-top: -20px;
    	padding-right: 132px;
@@ -450,7 +276,7 @@ h1 { color: #e2c810; visibility: hidden}
 
 nav { 
  	float: left; width: 20% auto; font-weight: 120%; letter-spacing: 0.1em;
-	text-align: left; background-color: #404040 ; margin: -146px 16px 16px 16px;  
+	text-align: left; background-color: #404040 ; margin: -158px 18px 18px 18px;  
 	border: 1px 0px 0px 0px solid #1a1a1a ; border-radius: 6px 6px 2px 2px ; box-shadow: 2px 2px 2px 2px #1a1a1a;
  	padding-top: 20px;
  	border-bottom: none;
@@ -463,6 +289,8 @@ top: 344px;
    z-index: 9999;
 
  }
+
+
 
 nav ul {list-style-type: none; margin: 0; padding: 0px; }
 
@@ -492,7 +320,7 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
  	font-size: 75%;
  	font-style: italic;
  	color: #003300;
-	 padding: 8.5%;
+	 padding: 8%;
 	clear: both; 
 	background-color: rgba(248, 235, 221, 0.03); 
 	width: 90%;
@@ -500,7 +328,7 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 	float: left;
 }
 
-#footer a:hover { 
+#footer a:hover{
 	color: #e0a10d;
 	text-decoration: underline;
 }
@@ -515,18 +343,14 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
      .indent-1 section a:hover{text-decoration: none; color: #cc9966; }
 
 
-
 iframe {
-  width: 100%;
 	box-shadow: 5px 10px 5px;
 }
 
 
-
-/* for desktop screen 1080 */
-@media only screen and  (max-width: 1195px)
+/* for desktop */
+@media only screen and  (max-width: 1082px)
 {
-
 
 .MyDropMenu {
 display: block;
@@ -545,14 +369,10 @@ display: block;
 .dropbtn {
     background-color: #cc9944;
     color: white;
-    padding: 16px;
+    padding: 14px 18px;
     font-size: 20px;
     border: none;
     cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #cc9966;
 }
 
 .dropdown {
@@ -563,7 +383,7 @@ display: block;
 .dropdown-content {
     display: none;
     position: absolute;
-     background-color: #404040;
+    background-color: #404040;
     min-width: 200px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -579,105 +399,15 @@ display: block;
 }
 
 .dropdown a:hover {background-color: #fff; color: #e2c810;}
-
-.show {display:block;}
-
-/* end down menu button */
-
-
-
-
-.logo {
-	background-image: url(logo.png);
-	background-repeat: no-repeat;
-	
-   display: none;
-   		
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-iframe {
-  width: 100%;
+.dropdown:hover .dropbtn {
+    background-color: #cc9966;
 }
+/* End drop down menu */
 
-
-h2 {
-color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
- 	width: 139%;
-}
-
-.div2 {
-     position: absolute;
-    top: 170px;
-    right: 40px;
-    width: 200px;
-    height: 100px;
-    border: 3px ;
-   width: 20%;
-   height: auto;
-}
-
-.div3 {
-     position: absolute;
-    top: 170px;
-    right: 360px;
-    width: 520px;
-    height: 100px;
-    color: #fff;
-    
-}
-
-.btn-group .button {
-    background-color: transparent; 
-    border: none;
-    border-top: 2px solid black;
-    color: white;
-    padding-top: -60px; 
-}
-    
-.container {
-	
-	max-width: auto;
-	width: 150%;
-	margin:-10px 20px;
-	position:relative;
-
-} 
- 
-        
-#content { 
-		width: 60%;
-        margin-left: 5%; 
-                     
-}
-aside { 
-		
-		width: 30%;  
-}
-            
-            
-
-nav { float: none;  display: none;
- width: auto;
-  margin-top: 0;	text-align: center;	  }
-                    
-nav ul { padding-left: 0;
-                }
-         
-nav li { display: inline;
-         margin: 0 2%; 
-}
-
-#footer { 
-width: 140% ;
-}
-
-
-
-
-
-/* for desktop */
-@media only screen and  (max-width: 1012px)
-{
 
 .logo {
 	background-image: url(logo.png);
@@ -707,40 +437,28 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    height: auto;
 }
 
-.div3 {
-     position: absolute;
-    top: 170px;
-    right: 300px;
-    width: 500px;
-    height: 200px;
-    color: #fff;
-    
-}
 
-.div7 {
-	position: block;
-   width: 60%; 
-   height: auto;
-    text-align: right;
-    color: #fff;
-    padding-top: 100px;
-    padding-bottom: 0px;
-	margin: 0px 0px -160px 210px;   
-	
-}
-
-  
+        
 #content { 
-		width: 60%;
-        margin-left: 5%;                     
+		width: 94%;
+        margin-left: 5%; 
+                     
 }
 
-
-aside { 
-		
-		width: 30%;  
-}
             
+section {
+  float: left;
+  margin: 0;
+  width: 62%;
+  
+}
+
+aside {
+  float: right;
+  margin: 0;
+  width: 30%;
+  
+}
             
 
 nav { float: none; display: none;
@@ -754,12 +472,7 @@ nav li { display: inline;
          margin: 0 2%; 
 		 }
 
-#footer { 
-width: 130% ;
 }
-
-}
-
 
 /* for tablet */
 @media only screen and (max-width: 768px) 
@@ -793,27 +506,27 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
    height: auto;
 }
 
-.div3 {
-     position: absolute;
-    top: 168px;
-    right: 300px;
-    width: 400px;
-    height: 100px;
-    color: #fff;
-    
-}
-
-
-
-nav { float: none;
+nav { float: none; display: none;
  width: auto;
   margin-top: 0;	text-align: center;	  }
           
-#content { width: 60%;
+#content { width: 90%;
                      margin-left: 5%; }
+                     
+section {
+  float: left;
+  margin: 0;
+  width: 40%;
+  
+}
+
            
-aside { width: 30%;  
-            }
+aside {
+  float: right;
+  margin: 5px;
+  width: 25%;
+  
+}
            
 nav ul { padding-left: 0;
                 }
@@ -821,24 +534,14 @@ nav ul { padding-left: 0;
 nav li { display: inline;
          margin: 0 2%; 
 		 }
-		 
-		 
-footer {
-		width: 150%;
 
 }
-
-
 
 /* for mobile */
 @media only screen and (max-width: 480px) {            
-        
-footer {
-		width: 100%;
-		position: block;
-}
-    
-    iframe, object, embed {
+            
+                 
+iframe, object, embed {
     max-width: 100%;
 
 }
@@ -873,16 +576,11 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
 #content { margin: 0 5%;      
                        width: auto;	}
 
-.container {
-	
-	max-width: 500px;
-	width:100%;
-	margin:10px 10px;
-	position:relative;
-}
+
+
 
   
-nav { width: auto;	  }
+nav { width: auto;	display: none;  }
 			
 nav ul { padding-left: 0; 
 			         text-align: center;}
@@ -895,11 +593,13 @@ nav li {display: block;
 					background-color: #FFFFCC; 
 					margin: 1%;
 					padding: 2.5%; }
-}
- 
+			
+
+ }
+
 @media only screen and (max-width: 375px) {            
             
-                
+                 
 iframe, object, embed {
     max-width: 100%;
 
@@ -933,7 +633,9 @@ color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold;
 		    h1 { margin-bottom: 0; }
 			
 #content { margin: 0 5%;      
-           width: auto;	}
+                       width: auto;	}
+
+
 
 
   
@@ -950,12 +652,9 @@ nav li {display: block;
 					background-color: #FFFFCC; 
 					margin: 1%;
 					padding: 2.5%; }
-footer {
-		width: 100%;
-}
+			
 
 header, hgroup, nav, footer, figure, figcaption { display: block; }
-
 
 
 </style>
@@ -967,6 +666,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div id="wrapper">
 <a class="logo" href="" ></a>
 
+
 <div class="header">
 
 <div class="MyDropMenu">
@@ -975,7 +675,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
   <div id="myDropdown" class="dropdown-content">
    <a href="index.html">INDUCTIONS</a>
  <a href="futureprofile.html">FUTURE PROFILE</a>
- <a href="colisium.html">COLISEUM</a>
+ <a href="colisium.html">COLISIUM</a>
  <a href="crusade.html">CRUSADES</a>
  <a href="https://www.facebook.com/groups/227937110985747/?ref=bookmarks">COMMUNITY</a>
  <a href="maximumu.html">MAXIMUM U</a>
@@ -1027,62 +727,51 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 
 </div>
-	
 
 
 
 <nav>
-
 <ul>
 <b><a href="index.html">INDUCTION</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
-<b> <a href="colisium.html">COLISEUM</a></b>
+<b> <a href="colisium.html">COLISIUM</a></b>
 <b> <a href="crusade.html">CRUSADES</a></b>
 <b> <a href="https://www.facebook.com/groups/227937110985747/?ref=bookmarks">COMMUNITY</a></b>
 <b> <a href="maximumu.html">MAXIMIZE U</a></b>
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
-	
 
 <div id="content">
 	
-<div class="container"> 
 
- <form id="contact"  action="futureprofile.html" name="theform">
-	 <h2>INDUCTION</h2>
-	 	<iframe width="825" height="400" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br>
-   <h2>COMPLETE YOUR INDUCTION</h2>
-   
-   
+<div class="group">
+  <section class="section">
+	 <h2>Welcome to the Mental Excellence</h2><br>
+	 	<iframe width="500" height="300" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br> 
+</section>
+<aside>
+<h3>Get Start it</h3>
+<p>paragraph goes here!</p>
 
-      <input placeholder="First name" type="text" tabindex="1"  name=firstname onKeyup="checkform()" required autofocus><br>
-    
-      <input placeholder="Last name" type="text" tabindex="1"  name=lastname onKeyup="checkform()" required autofocus><br>
-      
-      <input placeholder="Your Email Address" type="email" name=Email onKeyup="checkform()" tabindex="2" required><br>
-   
-      <input placeholder="Your Phone Number" type="tel" name=PhoneNumber onKeyup="checkform()" tabindex="3" required><br>
-   
-   <input placeholder="Birthday" type="text" tabindex="4"  name=birthday onKeyup="checkform()" required autofocus><br>
-   
-    <input placeholder="Future Job Title" type="text" tabindex="5"  name=futureJobTitle onKeyup="checkform()" required autofocus><br>
-    
-     <input placeholder="Future Company" type="text" tabindex="6"  name=futureCompany onKeyup="checkform()" required autofocus><br>
-      
-      <input placeholder="Charater name" type="text" tabindex="7"  name=charater onKeyup="checkform()" required autofocus><br><br>
-      
-	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
-this.style.backgroundColor = '#7ca503'">
+<h3>Get Start it</h3>
+<p>paragraph goes here!</p>
 
-
-	 
-</form>	
+<h3>Get Start it</h3>
+<p>paragraph goes here!</p>
+</aside>
 </div>
+	
 
-  
-<br><br><br><br><br><br><br><br>
+
+
 <br><br><br><br>
+  
+  
+  <h3>header</h3>
+<p>paragraphparagraphparagraphparagraphparagraph</p>
+
+
 <br><br><br><br>
 
 
@@ -1092,12 +781,12 @@ this.style.backgroundColor = '#7ca503'">
     <!-- Section 1 --> 
     <section>
         <div><b>MAXIMIZE EXCELLENCE</b></div><br>
-        <div><a href="www.maximizeexcellence.com" color="white">www.maximizexellence.com</a></div>
+        <div><a href="www.maximizexellence.com" color="white">www.maximizexellence.com</a></div>
         <div>&copy; Copyright Maximize Excellence 2017</div>
     </section>
 
     <!-- Section 2 -->
-    <section>
+     <section>
         <div><b>MAXIMIZE EXCELLENCE</b></div><br>
         <div><a href="#" color="white">Earnings Excellence</a></div>
         <div><a href="#" color="white">Terms of use</a></div>
@@ -1146,39 +835,18 @@ function checkform()
       
     }
 	
+
+/* toggle button */	
+function toggleClass(el){
+	if(el.className == "class1"){
+		el.className = "class2";
+	} else {
+		el.className = "class1";
+	}
+}
 	
 	
-function PreviewImage() {
-    var oFReader = new FileReader();
-    oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
-
-    oFReader.onload = function (oFREvent) {
-        document.getElementById("uploadPreview").src = oFREvent.target.result;
-    };
-};
-
-
-/*script for menu dropdown button*/
-function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-}
-
-
+	
 </script>
 </body>
 
