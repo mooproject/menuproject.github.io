@@ -9,6 +9,32 @@
 <link rel="stylesheet" href="css.css">
 
 <style>
+#save {background-color: #99cc00; color: #fff;}
+
+.styled-select select {
+   background: white;
+   border: none;
+   font-size: 14px;
+   height: 34px;
+   padding: 2px; /* If you add too much padding here, the options won't show in IE */
+   width: 468px;
+}
+
+.styled-select.slate {
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   height: 40px;
+   width: 807px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 40px;
+   width: 808px;
+}
+
+
+
 
 .image-upload > input
 {
@@ -186,7 +212,7 @@ section {
 
 
 
-#contact input[type="text"], #contact input[type="email"],  #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"],  #contact input[type="date"], #contact input[type="number"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width:92%;
 	border:1px solid #CCC;
 	background:#FFF;
@@ -195,7 +221,7 @@ section {
 	border-radius: 5px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+#contact input[type="text"]:hover, #contact input[type="date"]:hover, #contact input[type="number"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
@@ -212,7 +238,7 @@ section {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0CF;
+	background:#99cc00;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -1071,8 +1097,27 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
       <input placeholder="Charater name" type="text" tabindex="7"  name=charater onKeyup="checkform()" required autofocus><br><br>
       
 	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
-this.style.backgroundColor = '#7ca503'">
+this.style.backgroundColor = '#7ca503'"><br><br><br><br><br><br>
 
+<h2>FINANCIAL EXCELLENCE</h2>
+
+<div class="styled-select slate" >
+  <select>
+    <option style="color:gray" value="null" disabled="disabled" selected="selected" >Preferred Investment Type</option>
+    <option>The second option</option>
+    <option>The third option</option>
+  </select>
+</div><br>
+    
+      <input placeholder="Risk Tolerance" type="text" tabindex="1"  name=lastname  required autofocus><br>
+      
+      <input placeholder="Current Savings" type="number" name=Email tabindex="2" required><br>
+   
+      <input placeholder="Estimated (Marginal) Tax Rate" type="number" name=PhoneNumber  tabindex="3" required><br>
+   
+   <input placeholder="Expected Retirement Date" type="date" tabindex="4"  name=date  required autofocus><br><br>
+      
+	    <input id="save" type="submit" value="Save" >
 
 	 
 </form>	
