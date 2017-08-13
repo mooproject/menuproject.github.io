@@ -135,7 +135,7 @@ section {
 	
 .div9 {
 	 position: absolute;
-    top: 680px;
+    top: 570px;
     right: 410px;
     height:120px;
   width:120px;
@@ -145,7 +145,7 @@ border-radius: 1px;
 
 .div10  {
 	   position: absolute;
-    top: 520px;
+    top: 440px;
     right: 360px;
     width: 450px;
     height: 250px;
@@ -173,7 +173,7 @@ border-radius: 1px;
 .div8 img{
 	border: .2px solid white;
 	   position: absolute;
-    top: 650px;
+    top: 570px;
     right: 380px;
     width: 450px;
     height: 250px;
@@ -563,6 +563,11 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 	width: 90%;
 	height: 30px;
 	float: left;
+}
+
+#footer a:hover{
+	color: #e0a10d;
+	text-decoration: underline;
 }
 
 
@@ -1207,8 +1212,6 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <img src="saving.png" alt="" width="460" height="400">
 </div>
 
-
-
 <div class="div2">
 <a href="vault.html">
 <div id="myVault">
@@ -1219,14 +1222,13 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 
 <nav>
-
 <ul>
-<b><a href="index.html">INDUCTIONS</a></b> 
+<b><a href="index.html">INDUCTION</a></b> 
 <b> <a href="futureprofile.html">FUTURE PROFILE</a></b>
 <b> <a href="colisium.html">COLISIUM</a></b>
 <b> <a href="crusade.html">CRUSADES</a></b>
 <b> <a href="https://www.facebook.com/groups/227937110985747/?ref=bookmarks">COMMUNITY</a></b>
-<b> <a href="maximumu.html">MAXIMUM U</a></b>
+<b> <a href="maximumu.html">MAXIMIZE U</a></b>
 <b> <a href="faq.html">FAQ</a></b>
 </ul>
 </nav> 
@@ -1425,7 +1427,7 @@ params[nameVal[0]] = nameVal[1];
 return params;
 }
 params = getParams();
-myPhoto = unescape(params["myPhoto"]);
+
 firstname = unescape(params["firstname"]);
 lastname = unescape(params["lastname"]);
 email = unescape(params["Email"]);
@@ -1437,7 +1439,6 @@ charater = unescape(params["charater"]);
 
 
 
-document.getElementById("myPhoto").innerHTML = ( myPhoto + " ");
 document.getElementById("firstname").innerHTML = ( firstname + " ");
 document.getElementById("lastname").innerHTML = (lastname + " ");
 document.getElementById("Email").innerHTML = ( email + "<br>");

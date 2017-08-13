@@ -305,6 +305,7 @@ img {
     right: 0px;
     width: 260px;
     height: 210px;
+    
 }
 
 
@@ -315,7 +316,16 @@ img {
     right: 0px;
     width: 260px;
     height: 100% ;
-   
+     -webkit-filter: blur(2px);
+ -o-filter: blur(2px);
+ -ms-filter: blur(2px);
+}
+
+#myVault img:hover{
+ -webkit-filter: blur(0px);
+ -o-filter: blur(0px);
+ -ms-filter: blur(0px);
+
 }
 
 .div3 img{
@@ -393,11 +403,20 @@ wrapper {
 h1 { color: #e2c810; visibility: hidden}
 
 
- h2 { color: #e2c810; background-color: #fff; text-align: center;  font-weight: bold; 
- 	width: 710px;
-    
-    padding: 20px 8px ;
-    margin: 20px}
+ h2 { 
+ 	background-image: url(Banner.png);
+ 	background-repeat: no-repeat;
+ 	background-size: 800px 140px;
+ 	color: #cc9966; 
+ 	text-align: center;  
+ 	font-weight: bold; 
+ 	font-size: 30px;
+ 	width: 100%;
+ 	height: 60px;
+    padding: 50px 20px ;
+    margin: 40px
+
+}
 	
 	h3 {color: #e9dfaf;}
 	h4 {color: #efe7c3;}
@@ -481,6 +500,10 @@ nav a:hover { color: #e2c810; background-color: #eaeaea; background-position: ri
 	float: left;
 }
 
+#footer a:hover { 
+	color: #e0a10d;
+	text-decoration: underline;
+}
 
 #footer div{ margin: 2px; padding-left: -10px; }
 
@@ -1003,7 +1026,6 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 </div>
 
-
 </div>
 	
 
@@ -1028,9 +1050,9 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 <div class="container"> 
 
  <form id="contact"  action="futureprofile.html" name="theform">
-	 <h3>INDUCTION</h3><br>
+	 <h2>INDUCTION</h2><br>
 	 	<iframe width="825" height="400" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="5" allowfullscreen></iframe><br><br><br>
-   <h3>COMPLETE YOUR INDUCTION</h3><br>
+   <h2>COMPLETE YOUR INDUCTION</h2><br>
    
    
 
@@ -1053,7 +1075,6 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
 this.style.backgroundColor = '#7ca503'">
 
-      <input placeholder="First name" type="text" tabindex="1"  name=firstname onKeyup="checkform()" required autofocus><br>
 
 	 
 </form>	
