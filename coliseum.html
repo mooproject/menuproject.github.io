@@ -801,6 +801,16 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 <script>	
 	
+/* scroll to position bar*/
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#myVault').offset().top
+    }, 'slow');
+});
+
+/**/	
+	
 function move() {
   var elem = document.getElementById("myBar");   
   var width = 0;

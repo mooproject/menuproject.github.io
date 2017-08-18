@@ -10,6 +10,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 
+.barImage img{
+  width: 5%;
+  height: 60px;
+  position: absolute;
+  margin: 0px 0px 0px 808px;
+}
+
+
 /*crusade drowdown*/
 #flip {
     text-align: center;   
@@ -1447,7 +1455,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
       <a href="crusade.html">
       
-<img style="display: inline;" src="all.png" alt="" width="165" height="165" border="0"  />
+<img id="bar" style="display: inline;" src="all.png" alt="" width="165" height="165" border="0"  />
 </a>
 
 <a href="coliseumG.html" ">
@@ -1483,7 +1491,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 
 <br><br><br><br><br><br><br>
 
-
+<div class="barImage"><img id="myImgGuild" src="ExMark.png"></div>
 <label id="flip5"><img src="CalisiumCrusadeBar.png" width="600"></label>
  <div class="bk_img">
 <div id="panel5">
@@ -1491,8 +1499,8 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
       <aside><p>paragraph goes here!paragraph goes goesparagraph goesparagraph goesparagraph goesparagraph goesparagraph goes</p>
 </aside>
 <aside>
-<div class="class1" onclick="toggleClass(this)">
-      <h4>Mark as completed</h4>
+<div onclick="myFunctionImg()" >
+       <label class="class1" onclick="toggleClass(this)"><h4>MARK AS COMPLETED</h4></label>
     </div></aside>
     
  <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -1504,7 +1512,7 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
    
     </div>
 <div id="second"><img class="show" src="money.png" width="100px" height="100px" /><br><br><br><br> 
-   <button class="bank_saving"><p><h4>BANK SAVINGS!</h4></p></button>
+   <button class="class1" onclick="toggleClass(this)"><h4>BANK SAVINGS!</h4></button>
 </div>
         
 </div></div></div>
@@ -1540,6 +1548,32 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
 </div>
 
 <script>
+
+/*check mark*/
+img_array= new Array('ExMark.png','chMark.png');
+i=0;
+function myFunctionImg()
+{
+     i++;
+    document.getElementById("myImgGuild").src=img_array[i];
+    if(i==img_array.length-1) {
+   i=-1;
+
+    }
+    
+}
+/* end check mark */
+
+
+/* scroll to position bar*/
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#flip5').offset().top
+    }, 'slow');
+});
+
+/**/
 
 function move() {
   var elem = document.getElementById("myBar");   

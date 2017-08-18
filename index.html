@@ -11,6 +11,8 @@
 <style>
 #save {background-color: #99cc00; color: #fff;}
 
+#save:hover { background-color: #99cc99; color: #fff; }
+
 .styled-select select {
    background: white;
    border: none;
@@ -440,7 +442,7 @@ h1 { color: #e2c810; visibility: hidden}
  	width: 100%;
  	height: 60px;
     padding: 50px 20px ;
-    margin-top: -35px;
+    margin-top: -30px;
 
 }
 	
@@ -1097,8 +1099,11 @@ header, hgroup, nav, footer, figure, figcaption { display: block; }
       <input placeholder="Charater name" type="text" tabindex="7"  name=charater onKeyup="checkform()" required autofocus><br><br>
       
 	    <input id="submitbutton" type="submit" disabled="disabled" value="Submit" onclick="this.style.color='#ffffff';
-this.style.backgroundColor = '#7ca503'"><br><br><br><br><br><br>
+this.style.backgroundColor = '#7ca503'">
 
+</form>	<br><br><br><br><br>
+
+<form id="contact"  action="futureprofile.html" name="theform">
 <h2>FINANCIAL EXCELLENCE</h2>
 
 <div class="styled-select slate" >
@@ -1116,6 +1121,28 @@ this.style.backgroundColor = '#7ca503'"><br><br><br><br><br><br>
       <input placeholder="Estimated (Marginal) Tax Rate" type="number" name=PhoneNumber  tabindex="3" required><br>
    
    <input placeholder="Expected Retirement Date" type="date" tabindex="4"  name=date  required autofocus><br><br>
+      
+	    <input id="save" type="submit" value="Save" >
+</form>	
+
+<br><br><br><br><br>
+
+<form id="contact"  action="futureprofile.html" name="theform">
+<h2>Professional Excellence</h2>
+
+<div class="styled-select slate" >
+  <select>
+    <option style="color:gray" value="null" disabled="disabled" selected="selected" >Archetype</option>
+    <option>The second option</option>
+    <option>The third option</option>
+  </select>
+</div><br>
+    
+      <input placeholder="Company Name" type="text" tabindex="1"  name=lastname  required autofocus><br>
+      
+      <input placeholder="Title" type="text" name=title tabindex="2" required><br>
+   
+      <input placeholder="Industry" type="text" name=industry  tabindex="3" required><br><br>
       
 	    <input id="save" type="submit" value="Save" >
 
